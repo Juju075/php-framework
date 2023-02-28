@@ -13,7 +13,7 @@ FormBuilder
 
 Hydratation
 
-Queryuilder
+QueryBuilder
 
 Repository 
 
