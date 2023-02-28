@@ -10,9 +10,9 @@ use App\Framework\Database\CreateTable;
 use App\Framework\Database\Hydrator;
 use App\Framework\Form\FieldResolver;
 use App\Framework\Router\Request;
-use App\Framework\View\Pagination;
 use App\Framework\View\View;
 use Exception;
+use Pagination;
 
 class PostController extends AbstractController
 {

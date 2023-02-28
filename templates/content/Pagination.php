@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Framework\View;
 
-use App\Controller\PostController;
 use App\Exception\NotFoundException;
 use App\Framework\App;
 use App\Framework\Repository\RepositoryInterface;
 use App\Framework\Router\ControllerResolver;
+use const App\Framework\View\PostRepository;
 
 class Pagination
 {
