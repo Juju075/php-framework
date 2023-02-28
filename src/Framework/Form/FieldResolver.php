@@ -1,9 +1,7 @@
 <?php
 
-namespace App\Form;
+namespace App\Framework\Form;
 
-use App\Framework\Form\FieldInterface;
-use App\Framework\Form\FormTypeInterface;
 use Exception;
 
 class FieldResolver

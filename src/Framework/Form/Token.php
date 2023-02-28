@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Form;
+namespace App\Framework\Form;
 
-use App\Framework\Form\FieldInterface;
 use DateTime;
 
 class Token

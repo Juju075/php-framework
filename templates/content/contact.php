@@ -1,7 +1,7 @@
 <h1> Contact Us</h1>
 <?php
 /**
- * @var \App\Form\Form $form
+ * @var \App\Framework\Form\Form $form
  */
 echo $form
 ?>

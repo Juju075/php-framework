@@ -2,12 +2,11 @@
 
 namespace App\Form\Type;
 
-use App\Form\Form;
-use App\Form\Input;
-use App\Form\Label;
-use App\Form\Textarea;
-use App\Framework\Form\FieldInterface;
+use App\Framework\Form\Form;
 use App\Framework\Form\FormTypeInterface;
+use App\Framework\Form\Input;
+use App\Framework\Form\Label;
+use App\Framework\Form\Textarea;
 
 class ContactType extends AbstractField implements FormTypeInterface
 {

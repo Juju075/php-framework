@@ -2,9 +2,9 @@
 
 namespace App\Form\Type;
 
-use App\Form\Form;
-use App\Form\Input;
+use App\Framework\Form\Form;
 use App\Framework\Form\FormTypeInterface;
+use App\Framework\Form\Input;
 
 class AuthType extends AbstractField implements FormTypeInterface
 {

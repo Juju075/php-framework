@@ -1,8 +1,6 @@
 <?php
 
-namespace App\Form;
-
-use App\Framework\Form\FieldInterface;
+namespace App\Framework\Form;
 
 class Label implements FieldInterface
 {

@@ -1,6 +1,8 @@
 <h1> Create a User</h1>
 <?php
-use App\Form\Form;
+
+use App\Framework\Form\Form;
+
 /**
  * @var Form $form
  */

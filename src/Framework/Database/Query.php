@@ -2,9 +2,7 @@
 
 namespace App\Framework\Database;
 
-use App\Form\FieldResolver;
 use mysql_xdevapi\Exception;
-use \PDO;
 
 /**
  * Responsibility build queries

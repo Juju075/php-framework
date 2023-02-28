@@ -2,10 +2,10 @@
 
 namespace App\Form\Type;
 
-use App\Form\Form;
-use App\Form\Input;
-use App\Form\Label;
+use App\Framework\Form\Form;
 use App\Framework\Form\FormTypeInterface;
+use App\Framework\Form\Input;
+use App\Framework\Form\Label;
 
 class UserType extends AbstractField implements FormTypeInterface
 {

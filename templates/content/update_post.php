@@ -1,7 +1,8 @@
 <?php
 /**
- * @var Form $form
+ * @var \App\Framework\Form\Form $form
  */
 
-use App\Form\Form;
+use App\Framework\Form\Form;
+
 echo $form;

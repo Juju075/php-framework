@@ -5,14 +5,13 @@ namespace App\Controller;
 use App\Entity\Post;
 use App\Exception\NotFoundException;
 use App\Exception\ResourceNotFound;
-use App\Form\FieldResolver;
 use App\Form\Type\PostType;
 use App\Framework\Database\CreateTable;
 use App\Framework\Database\Hydrator;
+use App\Framework\Form\FieldResolver;
 use App\Framework\View\Pagination;
 use App\Framework\View\View;
 use Exception;
-use PDO;
 
 class PostController extends AbstractController
 {

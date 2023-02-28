@@ -3,11 +3,11 @@
 namespace App\Form\Type;
 
 use App\Entity\Post;
-use App\Form\Form;
-use App\Form\Input;
-use App\Form\Label;
-use App\Form\Textarea;
+use App\Framework\Form\Form;
 use App\Framework\Form\FormTypeInterface;
+use App\Framework\Form\Input;
+use App\Framework\Form\Label;
+use App\Framework\Form\Textarea;
 
 /**
  * Reusable Form

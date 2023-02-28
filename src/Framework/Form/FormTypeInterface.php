@@ -2,8 +2,6 @@
 
 namespace App\Framework\Form;
 
-use App\Form\Form;
-
 interface FormTypeInterface
 {
     public function formBuilder(): Form;

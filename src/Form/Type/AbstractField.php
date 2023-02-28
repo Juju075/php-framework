@@ -2,8 +2,8 @@
 
 namespace App\Form\Type;
 
-use App\Form\Form;
 use App\Framework\Database\SchemaInterface;
+use App\Framework\Form\Form;
 
 abstract class AbstractField
 {

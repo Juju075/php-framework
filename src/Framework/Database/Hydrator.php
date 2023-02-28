@@ -2,7 +2,7 @@
 
 namespace App\Framework\Database;
 
-use App\Form\FieldResolver;
+use App\Framework\Form\FieldResolver;
 
 /**
  * Only used to store functions

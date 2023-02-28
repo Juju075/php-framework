@@ -4,9 +4,6 @@ namespace App\Controller;
 
 use App\Exception\NotFoundException;
 use App\Exception\ResourceNotFound;
-use App\Form\Form;
-use App\Form\Input;
-use App\Form\Label;
 use App\Form\Type\UserType;
 
 class UserController extends AbstractController
