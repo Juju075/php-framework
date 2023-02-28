@@ -9,6 +9,7 @@ use App\Form\Type\PostType;
 use App\Framework\Database\CreateTable;
 use App\Framework\Database\Hydrator;
 use App\Framework\Form\FieldResolver;
+use App\Framework\Router\Request;
 use App\Framework\View\Pagination;
 use App\Framework\View\View;
 use Exception;
@@ -110,6 +111,16 @@ class PostController extends AbstractController
         $date = (new \DateTime())->format('Y-m-d H:i:s');
 
         echo $this->render('content/update_post.php', ['form' => $form, 'createdAt' => $date]);
+    }
+
+    public function remove(): void
+    {
+        $message = "are you sure?";
+        echo "<script type='text/javascript'>alert('$message');</script>";
+
+        $id = (new Request())->getParam();
+        $this->em->removeInDb($this->repository->getTable(), $id);
+        header('location: /posts');
     }
 }
 

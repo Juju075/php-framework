@@ -83,14 +83,5 @@ abstract class AbstractController
             return $instance->prepopulateFields(["title", "description"]);
         }
     }
-
-    public function remove(): void
-    {
-        $message = "are you sure?";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-
-        $id = (new Request())->getParam();
-        $this->em->removeInDb($this->repository->getTable(), $id);
-        header('location: /posts');
-    }
 }
+
