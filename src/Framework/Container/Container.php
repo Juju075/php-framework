@@ -18,7 +18,7 @@ class Container implements ContainerInterface
 
     public function get($id)
     {
-        if (!isset($this->entries[$id])) {
+        if ($this->has($id)) {
             $this->entries[$id] = $this->services[$id]($this);
         }
         return $this->entries[$id];
@@ -26,6 +26,9 @@ class Container implements ContainerInterface
 
     public function has($id): bool
     {
-        // TODO: Implement has() method.
+        if (!isset($this->entries[$id])) {
+            return true;
+        }
+        return false;
     }
 }
