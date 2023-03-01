@@ -7,7 +7,7 @@ Routeur
 
 Dependency injection Container
 
-Objet Relation database entity (recursive function)
+Object Relation database entity (recursive function)
 
 FormBuilder
 
