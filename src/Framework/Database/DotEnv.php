@@ -7,7 +7,7 @@ use Exception;
 class DotEnv
 {
     protected string $path;
-    protected array $credentials;
+    protected array $credentials = [];
 
 
     /**
@@ -49,24 +49,16 @@ class DotEnv
             $scrapped[$key] = $value;
         }
 
-        $dns = null;
-        $username = null;
-        $password = null;
         foreach ($scrapped as $key => $value) {
             if ($key === 'DATABASE_DNS') {
-                $dns = $value;
+                $this->credentials[$key] = $value;
             }
             if ($key === 'DATABASE_USER') {
-                $username = $value;
+                $this->credentials[$key] = $value;
             }
             if ($key === 'DATABASE_PASSWORD') {
-                $password = $value;
+                $this->credentials[$key] = $value;
             }
-        }
-        if ($dns && $username && $password !== null) {
-            $this->credentials = ['dns' => $dns, '$username' => $username, 'password' => $password];
-        } else {
-            throw new Exception(".ENV not complet");
         }
         return $this;
     }
