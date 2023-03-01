@@ -51,7 +51,6 @@ class PostController extends AbstractController
     public function show(int $id)
     {
         $post = $this->repository->selectOneById(['id' => $id]);
-        //$post = parent::remove()
         echo $this->render('content/post.php', ['post' => $post]);
     }
 
@@ -63,7 +62,6 @@ class PostController extends AbstractController
      */
     public function create()
     {
-        echo 'function create';
         $form = (parent::createForm(PostType::class));
 
         $messageFlash = [];
@@ -72,13 +70,11 @@ class PostController extends AbstractController
 
             $data = $_POST;
             if ($form->ifFileExist()) {
-                echo 'un fichier est chargé';
                 $image = FieldResolver::imageProcessing();
                 $data['pictureFileName'] = $image;
             }
 
             $post = Hydrator::hydrate($data, Post::class);
-            var_dump("Le post hydraté : ", $post);
 
             /** @var Post $post */
             $post->setCreatedAt(new \DateTime());
@@ -88,7 +84,6 @@ class PostController extends AbstractController
             $messageFlash = ['success' => 'ici le message'];
             $this->addFlash(View::FLASH_SUCCESS, "Post bien ajouté");
 
-            //rediriger vers le post cree
             $lastId = $this->em->getLastId();
             header('location: /post/' . $lastId);
             exit();

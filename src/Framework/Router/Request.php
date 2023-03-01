@@ -20,14 +20,13 @@ class Request
         return $this->uri;
     }
 
-    //range de 1 a l'infini
     public function getParam(): int
     {
         preg_match('/^\/post\/(\d+)$/', $this->uri, $matches);
         return $matches[1];
     }
 
-    public function getMethod()
+    public function getMethod(): string
     {
         return $this->method;
     }
