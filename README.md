@@ -1,5 +1,6 @@
-Framework personnel inpiré de Symfony<br> Natif PHP,
-réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)
+Framework personnel léger inpiré de Symfony<br> 
+Natif PHP,
+réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)<br>
 &copy; Copyright 2023
 
 
