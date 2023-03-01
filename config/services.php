@@ -5,6 +5,7 @@
  */
 
 use App\Framework\Container\Container;
+use App\Framework\Database\DotEnv;
 
 return [
     \App\Controller\MainController::class => static function (Container $container) {
@@ -53,6 +54,11 @@ return [
         return new \App\Framework\Database\Query();
     },
     \PDO::class => static function () {
+        //TODO
+
+        // $connection = new DotEnv($path)->load();
+        // $credential = $connection->getCredentials();
+        // return new \PDO($, $credential['dns'], $credential['password']);
         return new \PDO(dsn, username, password
         );
     },

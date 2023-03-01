@@ -56,11 +56,6 @@ abstract class AbstractController
         return $this->view->render($childTemplate, $data);
     }
 
-    protected function addFlash(string $flashType, string $message)
-    {
-        //TODO $this->>flashs[] = new Flash
-    }
-
     /**
      * @param string $formType
      * @param object|null $entity
