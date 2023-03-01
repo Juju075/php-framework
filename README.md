@@ -5,7 +5,7 @@ réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)
 
 Routeur
 
-Container d'injection de dépendances
+Dependency injection Container
 
 Objet Relation database entity (recursive function)
 
