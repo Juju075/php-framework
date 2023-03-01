@@ -21,10 +21,15 @@ class DotEnv
         $this->path = $path;
     }
 
+    public function getCredentials(): array
+    {
+        return $this->credentials;
+    }
+
     /**
      * @throws Exception
      */
-    public function load(): void
+    public function load(): self
     {
         if (!is_readable($this->path)) {
             throw new \LogicException('');
@@ -74,10 +79,6 @@ class DotEnv
         } else {
             throw new Exception(".ENV not complet");
         }
-    }
-
-    public function getCredentials(): array
-    {
-        return $this->credentials;
+        return $this;
     }
 }

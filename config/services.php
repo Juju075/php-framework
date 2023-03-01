@@ -56,8 +56,8 @@ return [
     \PDO::class => static function () {
         //TODO
 
-        // $connection = new (DotEnv($path))->load();
-        // $credential = $connection->getCredentials();
+        $connection = new DotEnv(ENV_PATH);
+        $credential = $connection->load()->getCredentials();
         // return new \PDO($, $credential['dns'], $credential['password']);
         return new \PDO(dsn, username, password
         );
