@@ -35,6 +35,7 @@ class DotEnv
             if (strpos(trim($line), '#') === 0) {
                 continue;
             }
+
             list($key, $value) = explode('=', $line, 2);
             $key = trim($key);
             $value = trim($value);
@@ -51,26 +52,27 @@ class DotEnv
 //                $_SERVER[$key] = $value;
 //            }
 
-            $data = [];
-            $dns = null;
-            $username = null;
-            $password = null;
-            foreach ($data as $item => $value) {
-                if ($item === 'DATABASE_DNS') {
-                    $dns = $value;
-                }
-                if ($item === 'DATABASE_USER') {
-                    $username = $value;
-                }
-                if ($item === 'DATABASE_PASSWORD') {
-                    $password = $value;
-                }
+        }
+
+        $scrapped = [];
+        $dns = null;
+        $username = null;
+        $password = null;
+        foreach ($scrapped as $key => $value) {
+            if ($key === 'DATABASE_DNS') {
+                $dns = $value;
             }
-            if ($dns && $username && $password !== null) {
-                $this->credentials = ['dns' => $dns, '$username' => $username, 'password' => $password];
-            } else {
-                throw new Exception(".ENV not complet");
+            if ($key === 'DATABASE_USER') {
+                $username = $value;
             }
+            if ($key === 'DATABASE_PASSWORD') {
+                $password = $value;
+            }
+        }
+        if ($dns && $username && $password !== null) {
+            $this->credentials = ['dns' => $dns, '$username' => $username, 'password' => $password];
+        } else {
+            throw new Exception(".ENV not complet");
         }
     }
 
