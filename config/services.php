@@ -53,26 +53,26 @@ return [
     \App\Framework\Database\Query::class => static function (Container $container) {
         return new \App\Framework\Database\Query();
     },
-//    \PDO::class => static function () {
-//        return new \PDO(dsn, username, password
-//        );
-//    },
     \PDO::class => static function () {
-        $connection = new DotEnv(ENV_PATH);
-        $credential = $connection->load()->getCredentials();
-
-        $keys = ['DATABASE_DNS', 'DATABASE_USE', 'DATABASE_PASSWORD'];
-        foreach ($keys as $key) {
-            if (
-                !array_key_exists($key, $credential)) {
-                throw new LogicException('env params missing', 500);
-            }
-        }
-        return
-            new \PDO($credential['DATABASE_DNS'],
-                $credential['DATABASE_USE'],
-                $credential['DATABASE_PASSWORD']);
+        return new \PDO(dsn, username, password
+        );
     },
+//    \PDO::class => static function () {
+//        $connection = new DotEnv(ENV_PATH);
+//        $credential = $connection->load()->getCredentials();
+//
+//        $keys = ['DATABASE_DNS', 'DATABASE_USE', 'DATABASE_PASSWORD'];
+//        foreach ($keys as $key) {
+//            if (
+//                !array_key_exists($key, $credential)) {
+//                throw new LogicException('env params missing', 500);
+//            }
+//        }
+//        return
+//            new \PDO($credential['DATABASE_DNS'],
+//                $credential['DATABASE_USE'],
+//                $credential['DATABASE_PASSWORD']);
+//    },
     \App\Framework\Database\EntityManager::class => static function (Container $container) {
         return new \App\Framework\Database\EntityManager(
             $container->get(\PDO::class),
