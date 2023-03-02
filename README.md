@@ -89,7 +89,7 @@
                 here </a><br>
             </td>
             <td>
-                code idi
+                parent::__construct($message, 404);
             </td>
         </tr>
         <tr>
@@ -99,7 +99,7 @@
                 here </a><br>
             </td>
             <td>
-                code idi
+                public function load(): self
             </td>
         </tr>
         <tr>
@@ -109,7 +109,7 @@
                 here </a><br>
             </td>
             <td>
-                code idi
+                $token[] = sprintf('<input type="hidden"  name="%s"/>', form::TOKEN_FIELD_NAME);
             </td>
         </tr>
         <tr>
