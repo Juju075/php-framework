@@ -172,8 +172,8 @@
 This framework respects Basic coding usage, SOLID principle, Pattern designs, implement PSR.
 
 During those months i learn a lot about PHP
-how i can use objects, interface , abstract class
-work with arrays and type
+how i can use objects in my advantage, interface, abstract class
+work with arrays and type correctly. 
 spread my responsibility and refactor my code.
 
 
