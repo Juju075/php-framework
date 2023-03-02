@@ -23,7 +23,8 @@ réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)<br>
             </td>
             <td>
                 ```
-                code idi
+                $isRegex = strpos($route->getUrl(), "/^") !== false;
+                if ($isRegex && preg_match($route->getUrl(), $currentUrl) === 1) {
                 ```
             </td>
         </tr>
