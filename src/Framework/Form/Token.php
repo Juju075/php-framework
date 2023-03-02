@@ -31,11 +31,6 @@ class Token
         $_SESSION['token'] = $this->tokenDate = new DateTime();
     }
 
-    public function getType(): string
-    {
-        // TODO: Implement getType() method.
-    }
-
     public function __toString(): string
     {
         $token = [];
