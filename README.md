@@ -1,3 +1,9 @@
+<style>
+    .code{
+    font-size:12px;
+    }
+</style>
+
 <p><img alt="Image" title="icon" src="Icon-pictures.png" /></p>
 <blockquote>
     Framework personnel léger inpiré de Symfony<br>
@@ -25,11 +31,9 @@
                 </a><br>
             </td>
             <td>
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
+                <p class="code">
+                    function test() { console.log("notice the blank line before this function?");
+                </p>
             </td>
         </tr>
         <tr>
@@ -177,12 +181,6 @@ how i can use objects to my advantage, interface, abstract class
 work with arrays and type correctly. 
 spread my responsibility and refactor my code.
 
-
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
 
 
 
