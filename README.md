@@ -38,7 +38,7 @@
             </td>
             <td>
                 ```
-                code idi
+                $this->listing = DirectoryResolver::getAllFilesInSubdirectories(ENTITY_DIRECTORY, ['php']);
                 ```
             </td>
         </tr>
@@ -49,7 +49,7 @@
             </td>
             <td>
                 ```
-                code idi
+                $this->form = new Form('', 'post', ['attribute' => 'test'],
                 ```
             </td>
         </tr>
@@ -61,7 +61,7 @@
             </td>
             <td>
                 ```
-                code idi
+                $query = (new Query())->insert($tableName, $keysValues);
                 ```
             </td>
         </tr>
@@ -73,7 +73,7 @@
             </td>
             <td>
                 ```
-                code idi
+                $setter = 'set' . ucwords($key);
                 ```
             </td>
         </tr>
@@ -85,7 +85,10 @@
             </td>
             <td>
                 ```
-                code idi
+                $query = (new Query())<br>
+                    ->select()<br>
+                    ->from($this->getTable())<br>
+                    ->where($params);
                 ```
             </td>
         </tr>
