@@ -1,51 +1,111 @@
-Framework personnel léger inpiré de Symfony<br> 
+Framework personnel léger inpiré de Symfony<br>
 Natif PHP,
 réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)<br>
 <a href="https://www.linkedin.com/in/bempime-kheve/" target="_blank"> Bempime KHEVE</a><br>
-&copy; Copyright 2023 
+&copy; Copyright 2023
 *******
 
-Router:
-<a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Router/Router.php" target="_blank"> here
-</a><br>
 
-
-Dependency injection Container (PSR-11):
-<a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Container/Container.php" target="_blank"> here </a><br>
-
-Object Relation database entity (recursive function):
-<a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/Schema.php" target="_blank"> here </a><br>
-
-
-FormBuilder:
-<a href="https://github.com/Juju075/php_framework/blob/main/src/Form/Type/PostType.php" target="_blank"> here </a><br>
-
-QueryBuilder
-<a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/EntityManager.php" target="_blank"> 
+<table>
+    <thead>
+        <tr>
+            <th>
+                Composant
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                Router:
+                <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Router/Router.php" target="_blank"> here
+                </a><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Object Relation database entity (recursive function):
+<a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/Schema.php" target="_blank">
 here </a><br>
-
-Hydratation:
+            </td>
+        </tr>
+        <tr>
+            <td>
+               FormBuilder:
+<a href="https://github.com/Juju075/php_framework/blob/main/src/Form/Type/PostType.php" target="_blank"> here </a><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               QueryBuilder
+<a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/EntityManager.php" target="_blank">
+here </a><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Hydratation:
 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/Hydrator.php" target="_blank">
 here </a><br>
-
-Repository:
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Repository:
 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Repository/AbstractRepository.php" target="_blank">
 here </a><br>
-
-Exception:
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Exception:
 <a href="https://github.com/Juju075/php_framework/blob/main/src/Exception/NotFoundException.php" target="_blank">
 here </a><br>
-
-Dotenv:
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Dotenv:
 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/DotEnv.php" target="_blank">
 here </a><br>
-
-Csrf Token:
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Csrf Token:
 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Form/Token.php" target="_blank">
 here </a><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Authentification:
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Session:
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Event Manager (PSR-14):
+            </td>
+        </tr>
+        <tr>
+            <td>
+               ici
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-Authentification:
 
-Session:
 
-Event Manager (PSR-14):
+
+
+
+
+
+
+
