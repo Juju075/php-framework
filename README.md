@@ -37,9 +37,7 @@
                 here </a><br>
             </td>
             <td>
-                ```
                 $this->listing = DirectoryResolver::getAllFilesInSubdirectories(ENTITY_DIRECTORY, ['php']);
-                ```
             </td>
         </tr>
         <tr>
@@ -48,9 +46,7 @@
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Form/Type/PostType.php" target="_blank"> here </a><br>
             </td>
             <td>
-                ```
                 $this->form = new Form('', 'post', ['attribute' => 'test'],
-                ```
             </td>
         </tr>
         <tr>
@@ -60,9 +56,7 @@
                 here </a><br>
             </td>
             <td>
-                ```
                 $query = (new Query())->insert($tableName, $keysValues);
-                ```
             </td>
         </tr>
         <tr>
@@ -72,9 +66,7 @@
                 here </a><br>
             </td>
             <td>
-                ```
                 $setter = 'set' . ucwords($key);
-                ```
             </td>
         </tr>
         <tr>
@@ -84,12 +76,10 @@
                 here </a><br>
             </td>
             <td>
-                ```
                 $query = (new Query())<br>
                     ->select()<br>
                     ->from($this->getTable())<br>
                     ->where($params);
-                ```
             </td>
         </tr>
         <tr>
@@ -99,9 +89,7 @@
                 here </a><br>
             </td>
             <td>
-                ```
                 code idi
-                ```
             </td>
         </tr>
         <tr>
@@ -111,9 +99,7 @@
                 here </a><br>
             </td>
             <td>
-                ```
                 code idi
-                ```
             </td>
         </tr>
         <tr>
@@ -123,9 +109,7 @@
                 here </a><br>
             </td>
             <td>
-                ```
                 code idi
-                ```
             </td>
         </tr>
         <tr>
@@ -133,9 +117,7 @@
                Authentification:
             </td>
             <td>
-                ```
                 code idi
-                ```
             </td>
         </tr>
         <tr>
@@ -143,9 +125,7 @@
                Session:
             </td>
             <td>
-                ```
                 code idi
-                ```
             </td>
         </tr>
         <tr>
@@ -153,9 +133,7 @@
                Event Manager (PSR-14):
             </td>
             <td>
-                ```
                 code idi
-                ```
             </td>
         </tr>
         <tr>
@@ -163,9 +141,7 @@
                ici
             </td>
             <td>
-                ```
                 code idi
-                ```
             </td>
         </tr>
     </tbody>
