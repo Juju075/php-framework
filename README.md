@@ -169,6 +169,12 @@
     </tbody>
 </table>
 
+This framework respects Basic coding usage, SOLID principle, Pattern designs, implement PSR.
+
+During those months i learn a lot about PHP
+how i can use objects, interface , abstract class
+work with arrays and type
+spread my responsibility and refactor my code.
 
 
 
