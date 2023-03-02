@@ -10,7 +10,7 @@
     <thead>
         <tr>
             <th>
-                Composant
+                Component
             </th>
             <th>
                 Key point
