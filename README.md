@@ -178,6 +178,12 @@ work with arrays and type correctly.
 spread my responsibility and refactor my code.
 
 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
 
 
 
