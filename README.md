@@ -156,12 +156,12 @@ réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)<br>
             <td>
                ici
             </td>
-        </tr>
             <td>
                 ```
                 code idi
                 ```
             </td>
+        </tr>
     </tbody>
 </table>
 
