@@ -25,10 +25,11 @@
                 </a><br>
             </td>
             <td>
-                ```
-                $isRegex = strpos($route->getUrl(), "/^") !== false;
-                if ($isRegex && preg_match($route->getUrl(), $currentUrl) === 1) {
-                ```
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
             </td>
         </tr>
         <tr>
