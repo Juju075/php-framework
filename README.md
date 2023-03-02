@@ -1,6 +1,10 @@
 <style>
     .code{
-    font-size:12px;
+        font-family: Georgia, Serif ;
+        padding: 5px;
+        font-size:9px;
+        background-color:slategrey;
+        border: 1px solid grey;    
     }
 </style>
 
