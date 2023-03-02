@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Framework\Database;
 
 use Exception;
@@ -8,7 +7,6 @@ class DotEnv
 {
     protected string $path;
     protected array $credentials = [];
-
 
     /**
      * @throws Exception
@@ -42,7 +40,6 @@ class DotEnv
             if (strpos(trim($line), '#') === 0) {
                 continue;
             }
-
             list($key, $value) = explode('=', $line, 2);
             $key = trim($key);
             $value = trim($value);

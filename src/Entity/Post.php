@@ -1,8 +1,7 @@
 <?php
-
 namespace App\Entity;
-
 use App\Framework\Database\Column;
+use App\Framework\Database\Entity;
 use App\Framework\Database\SchemaInterface;
 use App\Framework\Database\SchemaResolver;
 use App\Traits\Timestampable;
@@ -13,7 +12,7 @@ use App\Traits\Timestampable;
  * https://stackoverflow.com/questions/14977115/how-can-i-fetch-correct-datatypes-from-mysql-with-pdo
  * PDO::FETCH_CLASS
  */
-class Post implements SchemaInterface
+class Post extends Entity implements SchemaInterface
 {
     private string $title;
     private string $description;
@@ -60,26 +59,26 @@ class Post implements SchemaInterface
         return $this->pictureFileName;
     }
 
-    /**
-     * Needed for db to entity
-     * Resolve the right setter
-     * @param $colName
-     * @param $value
-     * @return void
-     */
-    public function __set($colName, $value): void
-    {
-        if ($value !== null) {
-            $properties = $this->getColumns();
-            foreach ($properties as $property => $column) {
-                if ($colName === $column->getName()) {
-                    $setter = 'set' . ucfirst($property);
-                    $this->$setter($value);
-                    break;
-                }
-            }
-        }
-    }
+//    /**
+//     * Resolve the right setter
+//     *
+//     * @param $colName
+//     * @param $value
+//     * @return void
+//     */
+//    public function __set($colName, $value): void
+//    {
+//        if ($value !== null) {
+//            $properties = $this->getColumns();
+//            foreach ($properties as $property => $column) {
+//                if ($colName === $column->getName()) {
+//                    $setter = 'set' . ucfirst($property);
+//                    $this->$setter($value);
+//                    break;
+//                }
+//            }
+//        }
+//    }
 
     public function getColumns(): array
     {

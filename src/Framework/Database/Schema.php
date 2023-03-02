@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Framework\Database;
-
 use App\Entity\Post;
 
 class Schema

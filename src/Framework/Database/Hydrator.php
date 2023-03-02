@@ -9,8 +9,6 @@ use App\Framework\Form\FieldResolver;
  */
 class Hydrator
 {
-
-    // form -> object ou array->object
     /**
      * Allow to hydrate any entity
      * only existing setters

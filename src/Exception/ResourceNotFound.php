@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Exception;
 
 class ResourceNotFound extends  \Exception implements ExceptionInterface
