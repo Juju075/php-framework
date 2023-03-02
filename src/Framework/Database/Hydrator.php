@@ -10,8 +10,7 @@ use App\Framework\Form\FieldResolver;
 class Hydrator
 {
     /**
-     * Allow to hydrate any entity
-     * only existing setters
+     * Hydrate any entity
      * @param array $dataArray
      * @param string $className
      * @param bool $isEntity
