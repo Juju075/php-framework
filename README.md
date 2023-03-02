@@ -12,6 +12,9 @@ réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)<br>
             <th>
                 Composant
             </th>
+            <th>
+                Key point
+            </th>
         </tr>
     </thead>
     <tbody>
