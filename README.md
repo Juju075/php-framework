@@ -6,8 +6,6 @@
     <a href="https://www.linkedin.com/in/bempime-kheve/" target="_blank"> Bempime KHEVE</a><br>
     &copy; Copyright 2023
 </blockquote>
-
-*******
 <table>
     <thead>
         <tr>
