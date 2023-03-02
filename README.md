@@ -169,7 +169,7 @@
     </tbody>
 </table>
 
-This framework respects Basic coding usage, SOLID principle, Pattern designs, implement PSR.
+This framework respects basic coding usage, SOLID principle, pattern designs, implement PSR.
 
 During those months i learn a lot about PHP
 how i can use objects in my advantage, interface, abstract class
