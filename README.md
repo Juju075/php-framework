@@ -1,8 +1,11 @@
-Framework personnel léger inpiré de Symfony<br>
-<mark>Natif PHP,</mark>
-réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)<br>
-<a href="https://www.linkedin.com/in/bempime-kheve/" target="_blank"> Bempime KHEVE</a><br>
-&copy; Copyright 2023
+<p><img alt="Image" title="icon" src="Icon-pictures.png" /></p>
+<blockquote>
+    Framework personnel léger inpiré de Symfony<br>
+    <mark>Natif PHP,</mark>
+    réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)<br>
+    <a href="https://www.linkedin.com/in/bempime-kheve/" target="_blank"> Bempime KHEVE</a><br>
+    &copy; Copyright 2023
+</blockquote>
 *******
 
 
