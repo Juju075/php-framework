@@ -157,6 +157,11 @@ réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)<br>
                ici
             </td>
         </tr>
+            <td>
+                ```
+                code idi
+                ```
+            </td>
     </tbody>
 </table>
 
