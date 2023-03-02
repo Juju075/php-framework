@@ -26,7 +26,8 @@
             </td>
             <td>
                 <p class="code">
-                    function test() { console.log("notice the blank line before this function?");
+                    $isRegex = strpos($route->getUrl(), "/^") !== false;<br>
+            if ($isRegex && preg_match($route->getUrl(), $currentUrl) === 1) {
                 </p>
             </td>
         </tr>
@@ -170,7 +171,7 @@
 
 > This framework respects basic coding usage, SOLID principle, pattern designs, implement PSR.
 
->During those months i learned a lot about PHP
+>During those months i learned a lot about PHP as
 how i can use objects to my advantage, interface, abstract class
 work effectively with arrays and type correctly. 
 spread my responsibility and refactor my code.
