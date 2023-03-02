@@ -10,7 +10,7 @@ Router
 </a><br>
 
 
-Dependency injection Container
+Dependency injection Container (PSR-11)
 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Container/Container.php" target="_blank"> ici </a><br>
 
 Object Relation database entity (recursive function)
@@ -32,6 +32,9 @@ Repository
 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Repository/AbstractRepository.php" target="_blank">
 ici </a><br>
 
+Exception
+<a href="https://github.com/Juju075/php_framework/blob/main/src/Exception/NotFoundException.php" target="_blank">
+ici </a><br>
 
 Dotenv
 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/DotEnv.php" target="_blank">
@@ -43,4 +46,4 @@ Authentification
 
 Session
 
-Event Manager
+Event Manager (PSR-14)
