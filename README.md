@@ -1,13 +1,3 @@
-<style>
-    .code{
-        font-family: Georgia, Serif ;
-        padding: 5px;
-        font-size:9px;
-        background-color:slategrey;
-        border: 1px solid grey;    
-    }
-</style>
-
 <p><img alt="Image" title="icon" src="Icon-pictures.png" /></p>
 <blockquote>
     Framework personnel léger inpiré de Symfony<br>
