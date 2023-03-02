@@ -182,7 +182,7 @@
 
 >During those months i learned a lot about PHP
 how i can use objects to my advantage, interface, abstract class
-work with arrays and type correctly. 
+work effectively with arrays and type correctly. 
 spread my responsibility and refactor my code.
 
 
