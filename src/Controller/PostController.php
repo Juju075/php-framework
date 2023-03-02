@@ -66,8 +66,6 @@ class PostController extends AbstractController
 
         $messageFlash = [];
         if ($form->isSubmitted() && $form->isValid($_POST)) {
-            echo 'submitted & valid form';
-
             $data = $_POST;
             if ($form->ifFileExist()) {
                 $image = FieldResolver::imageProcessing();
