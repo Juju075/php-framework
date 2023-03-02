@@ -27,7 +27,6 @@
             <td>
                 <p class="code">
                     $isRegex = strpos($route->getUrl(), "/^") !== false;<br>
-            if ($isRegex && preg_match($route->getUrl(), $currentUrl) === 1) {
                 </p>
             </td>
         </tr>
