@@ -8,17 +8,14 @@ class Token
 {
     private DateTime $tokenDate;
 
-    /**
-     * @return DateTime
-     */
-    public function getTokenDate(): DateTime
-    {
-        return $this->tokenDate;
-    }
-
     public function __construct()
     {
         $this->generateToken();
+    }
+
+    public function getTokenDate(): DateTime
+    {
+        return $this->tokenDate;
     }
 
     public function getName(): string

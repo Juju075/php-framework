@@ -2,6 +2,7 @@
 
 namespace App\Framework\Form;
 
+
 session_start();
 
 class Form
@@ -15,21 +16,12 @@ class Form
     private string $buttonTitle;
     private Token $token;
 
-    /**
-     * @return Token
-     */
-    public function getToken(): Token
-    {
-        return $this->token;
-    }
-
     public function __construct
     (
         string $action = '',
         string $method = 'post',
         array  $attributes = [],
         string $buttonTitle = 'Submit'
-        //genere le token
     )
     {
         $this->action = $action;
@@ -99,7 +91,6 @@ class Form
         foreach ($this->fields as $field) {
             $form[] = (string)$field;
         }
-
         $form[] = sprintf('<input type="hidden"  name="%s"/>', form::TOKEN_FIELD_NAME);
         $form[] = sprintf('<input type="submit" value="%s">', $this->buttonTitle);
         $form[] = '</form>';
