@@ -10,10 +10,10 @@
     <thead>
         <tr>
             <th>
-                Component
+                Components
             </th>
             <th>
-                Key point
+                Keys point
             </th>
         </tr>
     </thead>
