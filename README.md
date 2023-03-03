@@ -13,7 +13,7 @@
                 Components
             </th>
             <th>
-                Keys point
+                Key points
             </th>
         </tr>
     </thead>
