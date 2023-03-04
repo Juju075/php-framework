@@ -66,7 +66,7 @@
                 here </a><br>
             </td>
             <td>
-                $setter = 'set' . ucwords($key);
+                $dataClean = $isEntity ? $dataArray : FieldResolver::ValuesToClean($dataArray);
             </td>
         </tr>
         <tr>
