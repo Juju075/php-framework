@@ -9,6 +9,7 @@ class Request
     private $uri;
     private $method;
 
+
     public function __construct()
     {
         $this->uri = $_SERVER['REQUEST_URI'];
@@ -22,8 +23,10 @@ class Request
 
     public function getParam(): int
     {
-        preg_match('/^\/post\/(\d+)$/', $this->uri, $matches);
-        return $matches[1];
+        $regex = '/^\/post\/(\d+)$/'; //TODO ?<url>
+        $uri = $this->uri;
+        preg_match($regex, $uri, $matches);
+        return $matches[1]; //TODO clean code: naming subpatterns $matches['url']
     }
 
     public function getMethod(): string
