@@ -9,6 +9,6 @@ class NotFoundException extends \Exception implements ExceptionInterface
 {
     public function __construct($message = "Page not found")
     {
-        parent::__construct($message, 404);
+        parent::__construct($message, ErrorCode::HTTP_NOT_FOUND);
     }
 }
