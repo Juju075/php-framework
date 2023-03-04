@@ -89,7 +89,7 @@
                 here </a><br>
             </td>
             <td>
-                parent::__construct($message, 404);
+                parent::__construct($message, ErrorCode::HTTP_NOT_FOUND);
             </td>
         </tr>
         <tr>
