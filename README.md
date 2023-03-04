@@ -1,7 +1,7 @@
 <p><img alt="Image" title="icon" src="Icon-pictures.png" /></p>
 <blockquote>
     Framework personnel léger inpiré de Symfony<br>
-    Natif PHP<br>
+    <em>Natif PHP</em><br>
     réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)<br>
     <a href="https://www.linkedin.com/in/bempime-kheve/" target="_blank"> Bempime KHEVE</a><br>
     &copy; Copyright 2023
