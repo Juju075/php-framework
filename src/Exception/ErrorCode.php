@@ -2,7 +2,7 @@
 
 namespace App\Exception;
 
-class ErrorCode
+abstract class ErrorCode
 {
     public const HTTP_NOT_FOUND = 404;
     public const HTTP_FORBIDDEN = 503;
