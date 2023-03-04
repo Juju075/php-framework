@@ -10,6 +10,16 @@
     <thead>
         <tr>
             <th>
+                Unit tests
+            </th>
+        </tr>
+    </thead>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th>
                 Components
             </th>
             <th>
