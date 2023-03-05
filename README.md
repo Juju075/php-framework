@@ -16,7 +16,7 @@
     </thead>
 </table>
 
-<p>MVC architecture</p>
+**MVC architecture**
 <table>
     <thead>
         <tr>
