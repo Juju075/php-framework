@@ -161,7 +161,7 @@
 
 > This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) , SOLID principle, pattern designs, implement PSR.
 
->During those months i learned a lot about PHP as
+>During those months i learned a lot about PHP especially
 how i can use objects to my advantage, interface, abstract classes
 work effectively with arrays and type correctly. 
 spread my responsibility and refactor my code.
