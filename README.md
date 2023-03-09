@@ -2,9 +2,9 @@
 <blockquote>
     Framework personnel léger inpiré de Symfony<br>
     <em>Natif PHP</em><br>
-    réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)<br>
+    réalisé chez Alpha Soft <em>(ESN d'applicatifs métiers, PHP Symfony)</em><br>
     <a href="https://www.linkedin.com/in/bempime-kheve/" target="_blank"> Bempime KHEVE</a><br>
-    &copy; Copyright 2023
+    <p>&copy; Copyright 2023</p>
 </blockquote>
 <table>
     <thead>
@@ -150,7 +150,7 @@
         </tr>
         <tr>
             <td>
-               ici
+               ..
             </td>
             <td>
                 ..
