@@ -46,14 +46,6 @@ class Query
         return $this;
     }
 
-    public function order_by(string $order_by, array $conditions = [], string $terms = Query::ASC): self
-    {
-        $this->order_by = $order_by;
-        $this->order_by_conditions = $conditions;
-        $this->terms = $terms;
-        return $this;
-    }
-
     public function limit(int $limit, int $offset = 0): self
     {
         $this->limit = $limit;

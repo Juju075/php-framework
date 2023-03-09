@@ -4,7 +4,7 @@ namespace App\Framework\Database;
 
 /**
  * Generic functions about Directories
- * private function who are specifis
+ * private function who are specifies
  */
 class DirectoryResolver
 {

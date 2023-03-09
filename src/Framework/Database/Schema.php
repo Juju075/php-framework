@@ -38,7 +38,6 @@ class Schema
                 throw new \LogicException("implementation of getColumns() is missing in $namespace", 500);
             }
         }
-        //var_dump($this->dataSchema);
     }
 }
 
