@@ -1,5 +1,5 @@
 <?php
-#will be replaced by Dotenv | already refactored DotEnv.php
+# dev! | will be replaced by Dotenv | already done DotEnv.php
 const dsn = 'mysql:host=localhost;dbname=blog_mvc;charset=utf8';
 const username = 'root';
 const password = 'root';
