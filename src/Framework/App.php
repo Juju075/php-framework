@@ -13,7 +13,6 @@ use Exception;
 final class App
 {
     private Container $container;
-
     private Router $router;
     private Route $route;
 
