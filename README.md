@@ -129,7 +129,7 @@
                Authentification:
             </td>
             <td>
-                code idi
+                ..
             </td>
         </tr>
         <tr>
