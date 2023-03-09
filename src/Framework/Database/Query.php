@@ -21,9 +21,9 @@ class Query
     private int $update;
     private string $column;
     private string $value;
-    private string $order_by;
+    private string $orderBy;
     private int $offset;
-    private array $order_by_conditions;
+    private array $orderByConditions;
     private string $terms;
     private int $limit;
 
@@ -101,8 +101,8 @@ class Query
             if (isset($this->where)) {
                 $string[] = ' ' . $where;
             }
-            if (isset($this->order_by)) {
-                $string[] = 'ORDER BY' . $this->order_by;
+            if (isset($this->orderBy)) {
+                $string[] = 'ORDER BY' . $this->orderBy;
             }
             if (isset($this->limit)) {
                 $string[] = 'LIMIT' . ' ' . $this->limit . ' ' . 'OFFSET' . ' ' . $this->offset;
