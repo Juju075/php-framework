@@ -8,15 +8,15 @@ try {
 } catch (Exception $e) {
 
     /**
-     * @var ExceptionController $instance
+     * @var ExceptionController $execptionController
      */
-    $instance = $app->getContainer()->get(\App\Controller\ExceptionController::class);
+    $exceptionController = $app->getContainer()->get(\App\Controller\ExceptionController::class);
     if ($e instanceof \App\Exception\NotFoundException) {
-        $instance->pageNotFound();
+        $execptionController->pageNotFound();
         exit();
     }
     if ($e instanceof \App\Exception\ResourceNotFound) {
-        $instance->resourceNotFound();
+        $execptionController->resourceNotFound();
         exit();
     }
     echo "[500 OU AUTRES] TODO : handle exceptions";
