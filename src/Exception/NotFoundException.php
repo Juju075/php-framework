@@ -2,10 +2,13 @@
 
 namespace App\Exception;
 
+use Exception;
+
 /**
- * Overwrite Exception __construct
+ * Overwrite Exception
+ * parent::__construct
  */
-class NotFoundException extends \Exception implements ExceptionInterface
+class NotFoundException extends Exception implements ExceptionInterface
 {
     public function __construct($message = "Page not found")
     {
