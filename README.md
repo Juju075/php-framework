@@ -15,7 +15,9 @@
         </tr>
     </thead>
 </table>
+
 **MVC architecture**
+
 <table>
     <thead>
         <tr>
@@ -135,7 +137,7 @@
                Session:
             </td>
             <td>
-                code idi
+                ..
             </td>
         </tr>
         <tr>
@@ -143,7 +145,7 @@
                Event Manager (PSR-14):
             </td>
             <td>
-                code idi
+                ..
             </td>
         </tr>
         <tr>
@@ -151,7 +153,7 @@
                ici
             </td>
             <td>
-                code idi
+                ..
             </td>
         </tr>
     </tbody>
