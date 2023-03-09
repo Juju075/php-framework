@@ -1,4 +1,5 @@
 <?php
+#will be replaced by Dotenv | already refactored DotEnv.php
 const dsn = 'mysql:host=localhost;dbname=blog_mvc;charset=utf8';
 const username = 'root';
 const password = 'root';
