@@ -82,7 +82,6 @@ class Query
 
     public function __toString(): string
     {
-        //SELECT ok
         $select = [];
         $from = [];
 
@@ -111,7 +110,6 @@ class Query
             return implode($string);
         }
 
-        //INSERT ok
         if (isset($this->keysValues)) {
             $columns = [];
             $values = [];

@@ -16,6 +16,7 @@
   "require": {
     "ext-pdo": "*",
     "ext-json": "*",
-    "ext-ctype": "*"
+    "ext-ctype": "*",
+    "ext-mysql_xdevapi": "*"
   }
 }
