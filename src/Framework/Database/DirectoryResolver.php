@@ -17,7 +17,6 @@ class DirectoryResolver
     {
         $resultFiles = [];
         $elements = scandir($dirPath);
-
         foreach ($elements as $element) {
             if (strpos($element, '.') === 0) {
                 continue;
