@@ -1,6 +1,10 @@
 <?php
 use App\Controller\ExceptionController;
-require_once 'vendor/autoload.php';
+
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
+require '../vendor/autoload.php';
 
 $app = new \App\Framework\App();
 try {
