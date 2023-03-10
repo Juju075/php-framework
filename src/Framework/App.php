@@ -14,7 +14,7 @@ final class App
 {
     private Container $container;
     private Router $router;
-    private Route $route;
+    private ?Route $route = null;
 
     public function __construct()
     {
