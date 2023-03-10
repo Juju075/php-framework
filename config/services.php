@@ -58,19 +58,19 @@ return [
         );
     },
 //    \PDO::class => static function () {
-//        $credential = new DotEnv(ENV_PATH)->getCredentials();
+//        $credentials = new DotEnv(ENV_PATH)->getCredentials();
 //
 //        $keys = ['DATABASE_DNS', 'DATABASE_USE', 'DATABASE_PASSWORD'];
 //        foreach ($keys as $key) {
 //            if (
-//                !array_key_exists($key, $credential)) {
+//                !array_key_exists($key, $credentials)) {
 //                throw new LogicException('env params missing', 500);
 //            }
 //        }
 //        return
-//            new \PDO($credential['DATABASE_DNS'],
-//                $credential['DATABASE_USE'],
-//                $credential['DATABASE_PASSWORD']);
+//            new \PDO($credentials['DATABASE_DNS'],
+//                $credentials['DATABASE_USE'],
+//                $credentials['DATABASE_PASSWORD']);
 //    },
     \App\Framework\Database\EntityManager::class => static function (Container $container) {
         return new \App\Framework\Database\EntityManager(
