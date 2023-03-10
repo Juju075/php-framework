@@ -17,6 +17,7 @@ class DotEnv
             throw new Exception();
         }
         $this->path = $path;
+        $this->load();
     }
 
     public function getCredentials(): array
@@ -27,7 +28,7 @@ class DotEnv
     /**
      * @throws Exception
      */
-    public function load(): self
+    public function load(): void
     {
         if (!is_readable($this->path)) {
             throw new \LogicException('');
@@ -57,6 +58,5 @@ class DotEnv
                 $this->credentials[$key] = $value;
             }
         }
-        return $this;
     }
 }

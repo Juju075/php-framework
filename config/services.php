@@ -58,8 +58,7 @@ return [
         );
     },
 //    \PDO::class => static function () {
-//        $connection = new DotEnv(ENV_PATH);
-//        $credential = $connection->load()->getCredentials();
+//        $credential = (new DotEnv(ENV_PATH))->getCredentials();
 //
 //        $keys = ['DATABASE_DNS', 'DATABASE_USE', 'DATABASE_PASSWORD'];
 //        foreach ($keys as $key) {
