@@ -19,6 +19,7 @@ final class App
     public function __construct()
     {
         $services = require dirname(__DIR__, 2) . '/config/services.php';
+        require dirname(__DIR__, 2) . '/config/const.php';
         $this->container = new Container($services);
         $routes = require dirname(__DIR__, 2) . '/config/routes.php';
         $this->router = new Router($routes);
