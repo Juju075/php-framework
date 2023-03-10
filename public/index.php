@@ -1,6 +1,6 @@
 <?php
 use App\Controller\ExceptionController;
-
+require_once 'vendor/autoload.php';
 $app = new \App\Framework\App();
 
 try {
