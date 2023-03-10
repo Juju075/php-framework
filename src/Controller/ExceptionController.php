@@ -14,7 +14,7 @@ class ExceptionController extends AbstractController
      * @throws ResourceNotFound
      * @throws NotFoundException
      */
-    public function pageNotFound()
+    public function pageNotFound(): void
     {
         header("HTTP/1.0 404 Not Found");
         echo $this->render('404.php');
@@ -24,7 +24,7 @@ class ExceptionController extends AbstractController
      * @throws ResourceNotFound
      * @throws NotFoundException
      */
-    public function resourceNotFound()
+    public function resourceNotFound(): void
     {
         header("HTTP/1.0 500 Not Found");
         echo $this->render('500.php');
