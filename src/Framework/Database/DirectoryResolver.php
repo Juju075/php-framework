@@ -41,37 +41,6 @@ class DirectoryResolver
         return $resultFiles;
     }
 
-    private static function endsWith(string $haystack, string $needle): bool
-    {
-        $length = strlen($needle);
-        if (!$length) {
-            return true;
-        }
-        return substr($haystack, -$length) === $needle;
-    }
-
-    private static function withExtension(string $element, string $dirPath, array $extensions)
-    {
-        $returnFiles = [];
-        foreach ($extensions as $extension) {
-            if (is_file($dirPath . DIRECTORY_SEPARATOR . $element) &&
-                self::endsWith($element, $extension)) {
-                $returnFiles = $element;
-                break;
-            }
-        }
-        return $returnFiles;
-    }
-
-    private static function withoutExtension(string $element, string $dirPath)
-    {
-        $returnFiles = [];
-        if (is_file($dirPath . DIRECTORY_SEPARATOR . $element)) {
-            $returnFiles = $element;
-        }
-        return $returnFiles;
-    }
-
     /**
      * Use reflexion ?
      * @param array $listing
@@ -104,5 +73,36 @@ class DirectoryResolver
             }
         }
         return $ClassNameAndNamespace;
+    }
+
+    private static function endsWith(string $haystack, string $needle): bool
+    {
+        $length = strlen($needle);
+        if (!$length) {
+            return true;
+        }
+        return substr($haystack, -$length) === $needle;
+    }
+
+    private static function withExtension(string $element, string $dirPath, array $extensions)
+    {
+        $returnFiles = [];
+        foreach ($extensions as $extension) {
+            if (is_file($dirPath . DIRECTORY_SEPARATOR . $element) &&
+                self::endsWith($element, $extension)) {
+                $returnFiles = $element;
+                break;
+            }
+        }
+        return $returnFiles;
+    }
+
+    private static function withoutExtension(string $element, string $dirPath)
+    {
+        $returnFiles = [];
+        if (is_file($dirPath . DIRECTORY_SEPARATOR . $element)) {
+            $returnFiles = $element;
+        }
+        return $returnFiles;
     }
 }
