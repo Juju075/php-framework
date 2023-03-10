@@ -1,8 +1,8 @@
 <?php
 use App\Controller\ExceptionController;
 require_once 'vendor/autoload.php';
-$app = new \App\Framework\App();
 
+$app = new \App\Framework\App();
 try {
     $app->request();
 } catch (Exception $e) {
