@@ -1,8 +1,6 @@
 <?php
 use App\Controller\ExceptionController;
 require '../vendor/autoload.php';
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
 
 $app = new \App\Framework\App();
 try {
@@ -12,7 +10,7 @@ try {
     /**
      * @var ExceptionController $execptionController
      */
-    $exceptionController = $app->getContainer()->get(\App\Controller\ExceptionController::class);
+    $exceptionController = $app->getContainer()->get(ExceptionController::class);
     if ($e instanceof \App\Exception\NotFoundException) {
         $execptionController->pageNotFound();
         exit();
