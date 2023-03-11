@@ -32,6 +32,18 @@
     <tbody>
         <tr>
             <td>
+                Index:
+                <a href="https://github.com/Juju075/php_framework/blob/main/public/index.php" target="_blank"> here
+                </a><br>
+            </td>
+            <td>
+                <p class="code">
+                    $app = new \App\Framework\App();<br>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 Router:
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Router/Router.php" target="_blank"> here
                 </a><br>
@@ -159,12 +171,13 @@
     </tbody>
 </table>
 
-> This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) , SOLID principle, pattern designs, implement PSR.
+> This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) ,
+> SOLID principle, pattern designs, implement PSR.
 
->During those months I learned a lot about PHP especially
-how I can use objects to my advantage, interface, abstract classes
-work effectively with arrays and type correctly. 
-spread my responsibility and refactor my code.
+> During those months I learned a lot about PHP especially
+> how I can use objects to my advantage, interface, abstract classes
+> work effectively with arrays and type correctly.
+> spread my responsibility and refactor my code.
 
 
 
