@@ -10,6 +10,15 @@
     <thead>
         <tr>
             <th>
+                Documentation
+            </th>
+        </tr>
+    </thead>
+</table>
+<table>
+    <thead>
+        <tr>
+            <th>
                 Unit tests
             </th>
         </tr>
