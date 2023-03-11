@@ -32,7 +32,7 @@
     <tbody>
         <tr>
             <td>
-                Index:
+                Index (PSR-4):
                 <a href="https://github.com/Juju075/php_framework/blob/main/public/index.php" target="_blank"> here
                 </a><br>
             </td>
