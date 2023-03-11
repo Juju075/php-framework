@@ -118,7 +118,7 @@
         </tr>
         <tr>
             <td>
-               Exception:
+               Exceptions:
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Exception/NotFoundException.php" target="_blank">
                 here </a><br>
             </td>
