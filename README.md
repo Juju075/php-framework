@@ -32,7 +32,7 @@
     <tbody>
         <tr>
             <td>
-                Index (PSR-4):
+                Index <br>(PSR-4):
                 <a href="https://github.com/Juju075/php_framework/blob/main/public/index.php" target="_blank"> here
                 </a><br>
             </td>
@@ -44,7 +44,7 @@
         </tr>
         <tr>
             <td>
-                Dependency Injection Container (PSR-11):
+                Dependency Injection Container <br>(PSR-11):
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Container/Container.php" target="_blank"> here
                 </a><br>
             </td>
@@ -164,7 +164,7 @@
         </tr>
         <tr>
             <td>
-               Event Manager (PSR-14):
+               Event Manager <br>(PSR-14):
             </td>
             <td>
                 ..
