@@ -44,6 +44,16 @@
         </tr>
         <tr>
             <td>
+                Dependency Injection Container:
+                <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Container/Container.php" target="_blank"> here
+                </a><br>
+            </td>
+            <td>
+                ici
+            </td>
+        </tr>
+        <tr>
+            <td>
                 Router:
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Router/Router.php" target="_blank"> here
                 </a><br>
@@ -54,19 +64,6 @@
                 </p>
             </td>
         </tr>
-        <tr>
-            <td>
-                dependencies injection container:
-                <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Container/Container.php" target="_blank"> here
-                </a><br>
-            </td>
-            <td>
-                <p class="code">
-                    $app = new \App\Framework\App();<br>
-                </p>
-            </td>
-        </tr>
-
         <tr>
             <td>
                Object Relation database entity (recursive function):
