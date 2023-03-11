@@ -49,7 +49,7 @@
                 </a><br>
             </td>
             <td>
-                ici
+                class Container implements ContainerInterface
             </td>
         </tr>
         <tr>
