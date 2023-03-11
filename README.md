@@ -56,6 +56,19 @@
         </tr>
         <tr>
             <td>
+                dependencies injection container:
+                <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Container/Container.php" target="_blank"> here
+                </a><br>
+            </td>
+            <td>
+                <p class="code">
+                    $app = new \App\Framework\App();<br>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
                Object Relation database entity (recursive function):
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/Schema.php" target="_blank">
                 here </a><br>
