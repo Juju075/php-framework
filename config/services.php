@@ -22,17 +22,17 @@ return [
             $container->get(\App\Framework\Repository\PostRepository::class)
         );
     },
-    \App\Controller\UserController::class => function (Container $container) {
+    \App\Controller\UserController::class => static function (Container $container) {
         return new \App\Controller\UserController(
             $container->get(\App\Framework\View\View::class)
         );
     },
-    \App\Controller\ContactController::class => function (Container $container) {
+    \App\Controller\ContactController::class => static function (Container $container) {
         return new \App\Controller\ContactController(
             $container->get(\App\Framework\View\View::class)
         );
     },
-    \App\Controller\AuthController::class => function (Container $container) {
+    \App\Controller\AuthController::class => static function (Container $container) {
         return new \App\Controller\AuthController(
             $container->get(\App\Framework\View\View::class)
         );
@@ -40,7 +40,7 @@ return [
     \App\Framework\Router\ControllerResolver::class => static function (Container $container) {
         return new \App\Framework\Router\ControllerResolver($container);
     },
-    \App\Controller\ExceptionController::class => function (Container $container) {
+    \App\Controller\ExceptionController::class => static function (Container $container) {
         return new \App\Controller\ExceptionController(
             $container->get(\App\Framework\View\View::class
             )
@@ -84,5 +84,8 @@ return [
     },
     'paramResolver' => static function (Container $container) {
         return (new \App\Framework\Router\Request())->getParam();
+    },
+    'test-services' => static function(){
+        return 'test services ok';
     }
 ];
