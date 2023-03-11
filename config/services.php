@@ -84,8 +84,5 @@ return [
     },
     'paramResolver' => static function (Container $container) {
         return (new \App\Framework\Router\Request())->getParam();
-    },
-    'test-services' => static function(){
-        return 'test services ok';
     }
 ];
