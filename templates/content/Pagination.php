@@ -25,7 +25,6 @@ class Pagination
 
         if (isset($_GET['page']) && !empty((int)$_GET['page'])) {
             $currentPage = (int)$_GET['page'];
-            var_dump($currentPage);
         } elseif (isset($_GET['page']) && !is_int((int)$_GET['page'])) {
             throw new \LogicException("numero de page $currentPage n\'est pas valide");
         }
