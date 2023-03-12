@@ -100,7 +100,7 @@
         </tr>
         <tr>
             <td>
-               Object Relation database entity (recursive function):
+               Object Relation database entity (recursive function, File system):
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/Schema.php" target="_blank">
                 here </a><br>
             </td>
