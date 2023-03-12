@@ -158,7 +158,7 @@
         <tr>
             <td>
                Pagination:
-                <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Form/Token.php" target="_blank">
+                <a href="https://github.com/Juju075/php_framework/blob/main/templates/content/Pagination.php" target="_blank">
                 here </a><br>
             </td>
             <td>
