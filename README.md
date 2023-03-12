@@ -32,7 +32,7 @@
     <thead>
         <tr>
             <th>
-                Skill Value test
+                Skill Value
             </th>
         </tr>
     </thead>
