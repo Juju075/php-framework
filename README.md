@@ -28,6 +28,15 @@
         </tr>
     </thead>
 </table>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Skill Value
+            </th>
+        </tr>
+    </thead>
+</table>
 
 **MVC architecture**
 
@@ -207,15 +216,7 @@
         </tr>
     </tbody>
 </table>
-<table>
-    <thead>
-        <tr>
-            <th>
-                Skill Value
-            </th>
-        </tr>
-    </thead>
-</table>
+
 > This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) ,
 > SOLID principle, pattern designs, implement PSR.
 
