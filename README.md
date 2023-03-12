@@ -67,7 +67,14 @@
         </tr>
         <tr>
             <td>
-               Event Dispatcher <br>(PSR-14):
+               Event Manager <br>(PSR-14):
+                <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Router/Router.php" target="_blank"> here
+                </a><br>
+            </td>
+            <td>
+                <p class="code">
+                    class EventManager implements EventDispatcherInterface<br>
+                </p>
             </td>
             <td>
                 ..
