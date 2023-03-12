@@ -23,7 +23,7 @@
     <thead>
         <tr>
             <th>
-                Unit tests in GithHub Action CI/CD
+                Unit tests in GithHub Actions CI/CD
             </th>
         </tr>
     </thead>
