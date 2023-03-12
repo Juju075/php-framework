@@ -157,6 +157,16 @@
         </tr>
         <tr>
             <td>
+               Pagination:
+                <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Form/Token.php" target="_blank">
+                here </a><br>
+            </td>
+            <td>
+                public function calcPagination(int $itemPerPage = 4): self
+            </td>
+        </tr>
+        <tr>
+            <td>
                Authentification:
             </td>
             <td>
