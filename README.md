@@ -76,9 +76,6 @@
                     class EventManager implements EventDispatcherInterface<br>
                 </p>
             </td>
-            <td>
-                ..
-            </td>
         </tr>
         <tr>
             <td>
