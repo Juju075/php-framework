@@ -28,7 +28,15 @@
         </tr>
     </thead>
 </table>
-
+<table>
+    <thead>
+        <tr>
+            <th>
+                Skill Value
+            </th>
+        </tr>
+    </thead>
+</table>
 **MVC architecture**
 
 <table>
