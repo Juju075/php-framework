@@ -209,7 +209,7 @@
 
 > During those months I learned a lot about PHP especially
 > how I can use objects to my advantage, interface, abstract classes
-> work effectively with arrays and type correctly.
+> work effectively with arrays, type correctly.
 > spread my responsibility and refactor my code.
 
 
