@@ -1,6 +1,4 @@
 <?php
-
-
 use App\Framework\Repository\RepositoryInterface;
 
 class Pagination
