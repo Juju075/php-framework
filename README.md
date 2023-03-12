@@ -68,7 +68,7 @@
         <tr>
             <td>
                Event Manager <br>(PSR-14):
-                <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Router/Router.php" target="_blank"> here
+                <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Event/EventManager.php" target="_blank"> here
                 </a><br>
             </td>
             <td>
