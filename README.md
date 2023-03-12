@@ -23,7 +23,7 @@
     <thead>
         <tr>
             <th>
-                Unit tests
+                Unit tests in GithHub Action CI/CD
             </th>
         </tr>
     </thead>
@@ -63,6 +63,14 @@
             </td>
             <td>
                 class Container implements ContainerInterface
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Event Manager <br>(PSR-14):
+            </td>
+            <td>
+                ..
             </td>
         </tr>
         <tr>
@@ -180,14 +188,6 @@
         <tr>
             <td>
                Session:
-            </td>
-            <td>
-                ..
-            </td>
-        </tr>
-        <tr>
-            <td>
-               Event Manager <br>(PSR-14):
             </td>
             <td>
                 ..
