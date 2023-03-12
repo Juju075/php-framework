@@ -67,7 +67,7 @@
         </tr>
         <tr>
             <td>
-               Event Manager <br>(PSR-14):
+               Event Dispatcher <br>(PSR-14):
             </td>
             <td>
                 ..
