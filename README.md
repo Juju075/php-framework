@@ -12,6 +12,9 @@
             <th>
                 Documentation
             </th>
+            <th>
+                <a href="https://php-framework-documentation.bempime-kheve.com ">PHP FRAMEWORK DOCUMENTATION</a>
+            </th>
         </tr>
     </thead>
 </table>
