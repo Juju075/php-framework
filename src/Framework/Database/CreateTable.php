@@ -9,7 +9,7 @@ class CreateTable
     public function __construct()
     {
         //dotEnv
-        $this->pdo = new \PDO(DNS, username, pass);
+        $this->pdo = new \PDO(DSN, USERNAME, PASSWORD);
     }
 
     function queries(): ?array
