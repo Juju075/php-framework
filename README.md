@@ -225,8 +225,9 @@
         </tr>
     </thead>
 </table>
-> This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) ,
-> SOLID principle, pattern designs, implement PSR.
+
+>This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) ,
+>SOLID principle, pattern designs, implement PSR.
 
 > During those months I learned a lot about PHP especially
 > how I can use objects to my advantage, interface, abstract classes
