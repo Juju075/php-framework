@@ -32,11 +32,11 @@
     <thead>
         <tr>
             <th>
-                Skill Value
+                SkillValue
             </th>
         </tr>
     </thead>
-</table>
+</table><br>
 
 **MVC architecture**
 
@@ -216,7 +216,15 @@
         </tr>
     </tbody>
 </table>
-
+<table>
+    <thead>
+        <tr>
+            <th>
+                SymfonyInsight
+            </th>
+        </tr>
+    </thead>
+</table>
 > This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) ,
 > SOLID principle, pattern designs, implement PSR.
 
