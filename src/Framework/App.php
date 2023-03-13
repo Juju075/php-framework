@@ -47,11 +47,13 @@ final class App
             (new Request())->getMethod()
         );
 
+        var_dump($this->route->getUrl());
+
         /**
          * New Service to add @ unique instance
-         * @var ControllerResolver $resolver
+         * @var ControllerResolver $controllerResolver
          */
-        $resolver = $this->container->get(ControllerResolver::class);
-        $resolver->resolve($this->route);
+        $controllerResolver = $this->container->get(ControllerResolver::class);
+        $controllerResolver->resolve($this->route);
     }
 }

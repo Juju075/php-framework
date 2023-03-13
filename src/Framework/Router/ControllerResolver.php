@@ -25,12 +25,12 @@ class ControllerResolver
         if ($route === null) {
             throw new NotFoundException();
         }
-        $data = $route->getController();
-        $action = $data['action'];
-        $controller = $this->container->get($data['controllerName']);
+        $controllerSettings = $route->getController();
+        $action = $controllerSettings['action'];
+        $controller = $this->container->get($controllerSettings['controllerName']);
 
-        if (isset($data['param'])) {
-            $param = $this->container->get($data['param']);
+        if (isset($controllerSettings['param'])) {
+            $param = $this->container->get($controllerSettings['param']);
             return $controller->$action($param);
         }
         return $controller->$action();

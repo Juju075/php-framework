@@ -60,6 +60,12 @@ return [
             'action' => 'createTables'
         ]
     ),
+    new \App\Framework\Router\Route('/testscript', ['GET'],
+        [
+            'controllerName' => App\Controller\PostController::class,
+            'action' => 'testscript'
+        ]
+    ),
 ];
 
 

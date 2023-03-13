@@ -7,6 +7,7 @@ use App\Exception\NotFoundException;
 use App\Exception\ResourceNotFound;
 use App\Form\Type\PostType;
 use App\Framework\Database\CreateTable;
+use App\Framework\Database\DotEnv;
 use App\Framework\Database\Hydrator;
 use App\Framework\Form\FieldResolver;
 use App\Framework\Router\Request;
@@ -114,6 +115,17 @@ class PostController extends AbstractController
         $id = (new Request())->getParam();
         $this->em->removeInDb($this->repository->getTable(), $id);
         header('location: /posts');
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function testscript(): void
+    {
+        $path = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'DotEnv.php';
+        var_dump($path);
+        die();
+        $dotenv = new DotEnv($path);
     }
 }
 
