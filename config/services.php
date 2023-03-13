@@ -54,7 +54,7 @@ return [
         return new \App\Framework\Database\Query();
     },
     \PDO::class => static function () {
-        return new \PDO(dsn, username, password
+        return new \PDO(DSN, USERNAME, PASSWORD
         );
     },
 //    \PDO::class => static function () {

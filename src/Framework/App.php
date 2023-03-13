@@ -47,8 +47,6 @@ final class App
             (new Request())->getMethod()
         );
 
-        var_dump($this->route->getUrl());
-
         /**
          * New Service to add @ unique instance
          * @var ControllerResolver $controllerResolver

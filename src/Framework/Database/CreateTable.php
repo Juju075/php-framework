@@ -8,7 +8,8 @@ class CreateTable
 
     public function __construct()
     {
-        $this->pdo = new \PDO("mysql:host=localhost;dbname=blog_mvc;charset=utf8", "root", "root");
+        //dotEnv
+        $this->pdo = new \PDO(DNS, username, pass);
     }
 
     function queries(): ?array

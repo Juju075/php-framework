@@ -122,6 +122,8 @@ class PostController extends AbstractController
      */
     public function testscript(): void
     {
+        echo'function testscript';
+        die();
         $path = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'DotEnv.php';
         var_dump($path);
         die();
