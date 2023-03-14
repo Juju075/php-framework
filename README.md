@@ -76,15 +76,6 @@
         </tr>
         <tr>
             <td>
-               Session Interface<br>
-                (PSR-17)</br>:in progress
-            </td>
-            <td>
-                ..
-            </td>
-        </tr>
-        <tr>
-            <td>
                Event Dispatcher <br>(PSR-14):
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Event/EventManager.php" target="_blank"> in progress
                 </a><br>
@@ -93,6 +84,15 @@
                 <p class="code">
                     class EventManager implements EventDispatcherInterface<br>
                 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Session Interface<br>
+                (PSR-17)</br>:in progress
+            </td>
+            <td>
+                ..
             </td>
         </tr>
         <tr>
