@@ -200,7 +200,7 @@
         </tr>
         <tr>
             <td>
-               Session:
+               Session Interface:
             </td>
             <td>
                 ..
