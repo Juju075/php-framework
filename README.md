@@ -76,7 +76,7 @@
         </tr>
         <tr>
             <td>
-               Event Manager <br>(PSR-14):
+               Event Dispatcher <br>(PSR-14):
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Event/EventManager.php" target="_blank"> in progress
                 </a><br>
             </td>
