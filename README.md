@@ -88,14 +88,6 @@
         </tr>
         <tr>
             <td>
-               Session Interface<br>:in progress
-            </td>
-            <td>
-                ..
-            </td>
-        </tr>
-        <tr>
-            <td>
                 Router:
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Router/Router.php" target="_blank"> here
                 </a><br>
@@ -201,6 +193,14 @@
         <tr>
             <td>
                Authentification:
+            </td>
+            <td>
+                ..
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Session Interface<br>:in progress
             </td>
             <td>
                 ..
