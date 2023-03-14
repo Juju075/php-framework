@@ -66,7 +66,7 @@
         </tr>
         <tr>
             <td>
-                Dependency Injection (DI) <br>(PSR-11):
+                Dependency Injection<br>(PSR-11):
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Container/Container.php" target="_blank"> here
                 </a><br>
             </td>
