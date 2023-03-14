@@ -88,8 +88,7 @@
         </tr>
         <tr>
             <td>
-               Session Interface<br>
-                (PSR-17)</br>:in progress
+               Session Interface<br>:in progress
             </td>
             <td>
                 ..
