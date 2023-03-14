@@ -100,7 +100,7 @@
         </tr>
         <tr>
             <td>
-               Object Relation database<br> w/o Reflexion (recursive function, File system):
+               Object Relation database<br> w/o Reflexion<br><br> (recursive function,<br> File system):
                 <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/Schema.php" target="_blank">
                 here </a><br>
             </td>
