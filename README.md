@@ -10,7 +10,7 @@
     <thead>
         <tr>
             <th>
-                Documentation
+                Interactive Documentation
             </th>
             <th>
                 <a href="https://php-framework-documentation.bempime-kheve.com ">PHP FRAMEWORK DOCUMENTATION</a>
@@ -192,7 +192,7 @@
         </tr>
         <tr>
             <td>
-               Authentification:
+               Authentification :
             </td>
             <td>
                 ..
