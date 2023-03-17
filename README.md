@@ -210,7 +210,7 @@ NotFoundException | RessourceNotFound | ect...
 
 ## DotEnv
 
-Load and read your .env file perform an extraction of your params as \[key=>value\]
+Load,read your .env file perform and extraction your params as \[key=>value\]
 
 <br/>
 
