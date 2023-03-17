@@ -21,7 +21,7 @@
 
 <br/>
 
-### UML `📄 UML`
+### UML
 
 <br/>
 
@@ -57,8 +57,6 @@ This PSR describes a specification for autoloading classes from file paths. It i
 <br/>
 
 ## Container Interface (PSR-11)
-
-This document describes a common interface for dependency injection containers.
 
 The goal set by ContainerInterface is to standardize how frameworks and libraries make use of a container to obtain objects and parameters (called entries in the rest of this document).
 
@@ -296,6 +294,7 @@ Lets you connect with you credentials
 
 <br/>
 
+<h3>What i learn</h3>
 > This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) , SOLID principle, pattern designs, implement PSR.
 
 > During those months I learned a lot about PHP especially how I can use objects to my advantage, interface, abstract classes work effectively with arrays, type correctly. spread my responsibility and refactor my code.
