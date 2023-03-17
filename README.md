@@ -44,7 +44,7 @@ This PSR describes a specification for autoloading classes from file paths. It i
 
 <br/>
 
-### 📄 public/index.php
+### <a href="https://github.com/Juju075/php_framework/blob/main/public/index.php">📄 public/index.php</a>
 ```hack
 6      require '../vendor/autoload.php';
 7      
@@ -162,7 +162,7 @@ Allows you to hydrate any object
 
 <br/>
 
-### 📄 src/Framework/Database/Hydrator.php
+### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/Hydrator.php">📄 src/Framework/Database/Hydrator.php</a></a>
 ```hack
 25             $dataClean = $isEntity ? $dataArray : FieldResolver::ValuesToClean($dataArray);
 26             $instance = new $className();
@@ -178,7 +178,7 @@ Interrogate your database and return a response
 
 <br/>
 
-### 📄 src/Framework/Repository/AbstractRepository.php
+### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Repository/AbstractRepository.php">📄 src/Framework/Repository/AbstractRepository.php</a>
 ```hack
 27         public function selectOneById(array $params): object
 28         {
@@ -197,7 +197,7 @@ NotFoundException | RessourceNotFound | ect...
 
 <br/>
 
-### 📄 src/Exceptions/NotFoundException.php
+### <a href="https://github.com/Juju075/php_framework/blob/main/src/Exceptions/NotFoundException.php">📄 src/Exceptions/NotFoundException.php</a>
 ```hack
 11     class NotFoundException extends Exception implements ExceptionInterface
 12     {
@@ -214,7 +214,7 @@ Load and read your .env file perform an extraction of your params as \[key=>valu
 
 <br/>
 
-### 📄 src/Framework/Database/DotEnv.php
+### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/DotEnv.php">📄 src/Framework/Database/DotEnv.php</a>
 ```hack
 49             foreach ($scrapped as $key => $value) {
 50                 if ($key === 'DATABASE_DNS') {
@@ -230,7 +230,7 @@ Generate the crsf token for you
 
 <br/>
 
-### 📄 src/Framework/Form/Token.php
+### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Form/Token.php">📄 src/Framework/Form/Token.php</a>
 ```hack
 31         public function __toString(): string
 32         {
@@ -248,7 +248,7 @@ Split your response per page
 <br/>
 
 
-### 📄 templates/content/Pagination.php
+### <a href="https://github.com/Juju075/php_framework/blob/main/templates/content/Pagination.php">📄 templates/content/Pagination.php</a>
 ```hack
 20         public function calcPagination(int $itemPerPage = 4): self
 21         {
@@ -265,7 +265,7 @@ Lets you connect with you credentials
 
 <br/>
 
-## Session Interface
+## <a href="">Session Interface</a>
 
 <br/>
 
