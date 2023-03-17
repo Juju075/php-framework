@@ -39,7 +39,8 @@ UML
 
 This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. This PSR also describes where to place files that will be autoloaded according to the specification.
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-## Index  
+
+<h3>Index</h3>
 
 <br/>
 
@@ -129,7 +130,7 @@ Build your formType and obtain a html
 
 <br/>
 
-### 📄 src/Form/Type/PostType.php
+### <a href="https://github.com/Juju075/php_framework/blob/main/src/Form/Type/PostType.php">📄 src/Form/Type/PostType.php</a>
 ```hack
 17         public function formBuilder(): Form
 18         {
@@ -145,7 +146,7 @@ Build your query request on the fly
 
 <br/>
 
-### 📄 src/Framework/Database/EntityManager.php
+### <a  href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/EntityManager.php">📄 src/Framework/Database/EntityManager.php</a>
 ```hack
 32             $query = (new Query())->insert($tableName, $keysValues);
 33             $this->request = $this->pdo->prepare($query);
