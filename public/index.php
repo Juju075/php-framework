@@ -1,13 +1,9 @@
 <?php
 use App\Controller\ExceptionController;
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
 
 require '../vendor/autoload.php';
-
-
-
 $app = new \App\Framework\App();
+
 try {
     $app->request();
 } catch (Exception $e) {
@@ -16,14 +12,15 @@ try {
      * @var ExceptionController $execptionController
      */
     $exceptionController = $app->getContainer()->get(ExceptionController::class);
-    if ($e instanceof \App\Exception\NotFoundException) {
+    if ($e instanceof \App\Exceptions\NotFoundException) {
         $execptionController->pageNotFound();
         exit();
     }
-    if ($e instanceof \App\Exception\ResourceNotFound) {
+    if ($e instanceof \App\Exceptions\ResourceNotFound) {
         $execptionController->resourceNotFound();
         exit();
     }
+    echo "[500 OU AUTRES] TODO : handle exceptions";
     echo "[500 OU AUTRES] TODO : handle exceptions";
     echo $e->getMessage();
 }
