@@ -60,7 +60,7 @@ The goal set by ContainerInterface is to standardize how frameworks and librarie
 
 <br/>
 
-## Dependency Injection
+<h3>Dependency Injection </h3>
 
 <br/>
 
@@ -112,7 +112,7 @@ Use of a recursive function and file system to scrape your entity folder and rec
 
 <br/>
 
-### 📄 src/Framework/Database/DirectoryResolver.php
+###  <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/DirectoryResolver.php">📄 src/Framework/Database/DirectoryResolver.php</a>
 ```hack
 49         public static function getClassNameAndNamespace(array $listing): array
 50         {
