@@ -39,7 +39,7 @@
 
 This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. This PSR also describes where to place files that will be autoloaded according to the specification.
 
-## Index `📄 public/index.php`
+## Index  
 
 <br/>
 
@@ -64,7 +64,7 @@ The goal set by ContainerInterface is to standardize how frameworks and librarie
 
 <br/>
 
-## Dependency Injection `📄 src/Framework/Container/Container.php`
+## Dependency Injection
 
 <br/>
 
@@ -80,7 +80,7 @@ The goal set by ContainerInterface is to standardize how frameworks and librarie
 
 <br/>
 
-## Event Dispatcher (PSR-14) `📄 src/Framework/Event/EventManager.php`
+## Event Dispatcher (PSR-14)
 
 Event Dispatching is a common and well-tested mechanism to allow developers to inject logic into an application easily and consistently.
 
@@ -97,7 +97,7 @@ The goal of this PSR is to establish a common mechanism for event-based extensio
 
 <br/>
 
-## Router `📄 src/Framework/Router/Router.php`
+## Router
 
 Match the url with your routes
 
@@ -115,7 +115,7 @@ Match the url with your routes
 
 <br/>
 
-## Object Relation Model w/o reflexion `📄 src/Framework/Database/Schema.php`
+## Object Relation Model w/o reflexion
 
 Use of a recursive function and file system to scrape your entity folder to reconstruct a model of your database 'tables and columns'
 
@@ -134,7 +134,7 @@ Use of a recursive function and file system to scrape your entity folder to reco
 
 <br/>
 
-## FormBuilder `📄 src/Framework/Form/Form.php`
+## FormBuilder
 
 Build your formType and obtain a html
 
@@ -152,7 +152,7 @@ Build your formType and obtain a html
 
 <br/>
 
-## QueryBuilder `📄 src/Framework/Database/Query.php`
+## QueryBuilder
 
 Build your query request on the fly
 
@@ -170,7 +170,7 @@ Build your query request on the fly
 
 <br/>
 
-## Hydratation `📄 src/Framework/Database/Hydrator.php`
+## Hydratation 
 
 Allows you to hydrate any object
 
@@ -188,7 +188,7 @@ Allows you to hydrate any object
 
 <br/>
 
-## Repository `📄 src/Framework/Repository/PostRepository.php`
+## Repository 
 
 Interrogate your database and return a response
 
@@ -207,7 +207,7 @@ Interrogate your database and return a response
 
 <br/>
 
-## Exceptions `📄 src/Exceptions/NotFoundException.php`
+## Exceptions 
 
 Create your own exception that overide /Exception
 
@@ -228,7 +228,7 @@ NotFoundException | RessourceNotFound | ect...
 
 <br/>
 
-## DotEnv `📄 src/Framework/Database/DotEnv.php`
+## DotEnv
 
 Load and read your .env file perform an extraction of your params as \[key=>value\]
 
@@ -246,7 +246,7 @@ Load and read your .env file perform an extraction of your params as \[key=>valu
 
 <br/>
 
-## Csrf Token `📄 src/Framework/Form/Token.php`
+## Csrf Token
 
 Generate the crsf token for you
 
@@ -265,7 +265,7 @@ Generate the crsf token for you
 
 <br/>
 
-## Pagination `📄 templates/content/Pagination.php`
+## Pagination
 
 Split your response per page
 
