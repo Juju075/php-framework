@@ -46,11 +46,8 @@ This PSR describes a specification for autoloading classes from file paths. It i
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/public/index.php">📄 public/index.php</a>
 ```hack
-6      require '../vendor/autoload.php';
-7      
-8      
-9      
-10     $app = new \App\Framework\App();
+6      require '../vendor/autoload.php';     
+7      $app = new \App\Framework\App();
 ```
 
 <br/>
@@ -271,7 +268,7 @@ Lets you connect with your credentials
 
 <br/>
 
-<h3>What i learned</h3>
+<h3>What i learned?</h3>
 
 > This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) , SOLID principle, pattern designs, implement PSR.
 
