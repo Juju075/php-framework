@@ -13,15 +13,15 @@
 
 <br/>
 
-## Unit tests in Github Action CI/CD
+Unit tests in Github Action CI/CD
 
 <br/>
 
-### SkillValue
+SkillValue
 
 <br/>
 
-### UML
+UML
 
 <br/>
 
@@ -38,13 +38,11 @@
 ## Autoloading Standard (PSR-4)
 
 This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. This PSR also describes where to place files that will be autoloaded according to the specification.
-
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ## Index  
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 public/index.php
 ```hack
 6      require '../vendor/autoload.php';
@@ -66,8 +64,6 @@ The goal set by ContainerInterface is to standardize how frameworks and librarie
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Framework/Container/Container.php
 ```hack
 19         public function get($id)
@@ -86,8 +82,6 @@ The goal of this PSR is to establish a common mechanism for event-based extensio
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Framework/Event/EventManager.php
 ```hack
 5      class EventManager implements EventDispatcherInterface
@@ -101,8 +95,6 @@ Match the url with your routes
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Framework/Router/Router.php
 ```hack
 28                 $isRegex = strpos($route->getUrl(), "/^") !== false;
@@ -115,12 +107,10 @@ Match the url with your routes
 
 ## Object Relation Model w/o reflexion
 
-Use of a recursive function and file system to scrape your entity folder to reconstruct a model of your database 'tables and columns'
+Use of a recursive function and file system to scrape your entity folder and reconstruct a model of your database 'tables and columns'
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Framework/Database/DirectoryResolver.php
 ```hack
 49         public static function getClassNameAndNamespace(array $listing): array
@@ -138,8 +128,6 @@ Build your formType and obtain a html
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Form/Type/PostType.php
 ```hack
 17         public function formBuilder(): Form
@@ -156,8 +144,6 @@ Build your query request on the fly
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Framework/Database/EntityManager.php
 ```hack
 32             $query = (new Query())->insert($tableName, $keysValues);
@@ -174,8 +160,6 @@ Allows you to hydrate any object
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Framework/Database/Hydrator.php
 ```hack
 25             $dataClean = $isEntity ? $dataArray : FieldResolver::ValuesToClean($dataArray);
@@ -192,8 +176,6 @@ Interrogate your database and return a response
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Framework/Repository/AbstractRepository.php
 ```hack
 27         public function selectOneById(array $params): object
@@ -213,8 +195,6 @@ NotFoundException | RessourceNotFound | ect...
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Exceptions/NotFoundException.php
 ```hack
 11     class NotFoundException extends Exception implements ExceptionInterface
@@ -232,8 +212,6 @@ Load and read your .env file perform an extraction of your params as \[key=>valu
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Framework/Database/DotEnv.php
 ```hack
 49             foreach ($scrapped as $key => $value) {
@@ -250,8 +228,6 @@ Generate the crsf token for you
 
 <br/>
 
-
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/Framework/Form/Token.php
 ```hack
 31         public function __toString(): string
@@ -270,7 +246,6 @@ Split your response per page
 <br/>
 
 
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 templates/content/Pagination.php
 ```hack
 20         public function calcPagination(int $itemPerPage = 4): self
