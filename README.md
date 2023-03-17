@@ -261,7 +261,7 @@ Split your response per page
 
 ## Authentification/
 
-Lets you connect with you credentials
+Lets you connect with your credentials
 
 <br/>
 
@@ -272,6 +272,7 @@ Lets you connect with you credentials
 <br/>
 
 <h3>What i learned</h3>
+
 > This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) , SOLID principle, pattern designs, implement PSR.
 
 > During those months I learned a lot about PHP especially how I can use objects to my advantage, interface, abstract classes work effectively with arrays, type correctly. spread my responsibility and refactor my code.
