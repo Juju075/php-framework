@@ -28,7 +28,7 @@ app_version: 1.4.5
 
 <br/>
 
-### UML `📄 UML`
+### UML <a href="https://github.com/Juju075/php_framework/tree/main/UML">`📄 UML`</a>
 
 <br/>
 
@@ -46,7 +46,7 @@ app_version: 1.4.5
 
 This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. This PSR also describes where to place files that will be autoloaded according to the specification.
 
-## Index `📄 public/index.php`
+## Index <a href="https://github.com/Juju075/php_framework/blob/main/public/index.php">`📄 public/index.php`</a>
 
 <br/>
 
@@ -63,7 +63,7 @@ This PSR describes a specification for autoloading classes from file paths. It i
 
 <br/>
 
-## Container Interface (PSR-11)
+## Container Interface (PSR-11) <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Container/Container.php">`📄 src/Framework/Container/Container.php`</a> 
 
 This document describes a common interface for dependency injection containers.
 
@@ -71,7 +71,7 @@ The goal set by ContainerInterface is to standardize how frameworks and librarie
 
 <br/>
 
-## Dependency Injection `📄 src/Framework/Container/Container.php`
+<h3>Dependency Injection </h3>
 
 <br/>
 
@@ -87,7 +87,7 @@ The goal set by ContainerInterface is to standardize how frameworks and librarie
 
 <br/>
 
-## Event Dispatcher (PSR-14) `📄 src/Framework/Event/EventManager.php`
+## Event Dispatcher (PSR-14) <a href="">`📄 src/Framework/Event/EventManager.php`</a> 
 
 Event Dispatching is a common and well-tested mechanism to allow developers to inject logic into an application easily and consistently.
 
@@ -104,7 +104,7 @@ The goal of this PSR is to establish a common mechanism for event-based extensio
 
 <br/>
 
-## Router `📄 src/Framework/Router/Router.php`
+## Router <a href="">`📄 src/Framework/Router/Router.php`</a> 
 
 Match the url with your routes
 
@@ -122,7 +122,7 @@ Match the url with your routes
 
 <br/>
 
-## Object Relation Model w/o reflexion `📄 src/Framework/Database/Schema.php`
+## Object Relation Model w/o reflexion <a href="">`📄 src/Framework/Database/Schema.php`</a> 
 
 Use of a recursive function and file system to scrape your entity folder to reconstruct a model of your database 'tables and columns'
 
@@ -214,7 +214,7 @@ Interrogate your database and return a response
 
 <br/>
 
-## Exceptions `📄 src/Exceptions/NotFoundException.php`
+## Exceptions <a href="https://github.com/Juju075/php_framework/blob/main/src/Exceptions/NotFoundException.php">`📄 src/Exceptions/NotFoundException.php`</a>
 
 Create your own exception that overide /Exception
 
@@ -235,15 +235,13 @@ NotFoundException | RessourceNotFound | ect...
 
 <br/>
 
-## DotEnv `📄 src/Framework/Database/DotEnv.php`
+## DotEnv <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/DotEnv.php">`📄 src/Framework/Database/DotEnv.php`</a>
 
 Load and read your .env file perform an extraction of your params as \[key=>value\]
 
 <br/>
 
 
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 src/Framework/Database/DotEnv.php
 ```hack
 49             foreach ($scrapped as $key => $value) {
 50                 if ($key === 'DATABASE_DNS') {
@@ -253,15 +251,14 @@ Load and read your .env file perform an extraction of your params as \[key=>valu
 
 <br/>
 
-## Csrf Token `📄 src/Framework/Form/Token.php`
+## Csrf Token  <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Form/Token.php">`📄 src/Framework/Form/Token.php`</a>
 
 Generate the crsf token for you
 
 <br/>
 
 
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 src/Framework/Form/Token.php
+
 ```hack
 31         public function __toString(): string
 32         {
@@ -272,15 +269,13 @@ Generate the crsf token for you
 
 <br/>
 
-## Pagination `📄 templates/content/Pagination.php`
+## Pagination <a href="https://github.com/Juju075/php_framework/blob/main/templates/content/Pagination.php">`📄 templates/content/Pagination.php`</a>
 
-Split your response per page
+Split your response per page r
 
 <br/>
 
 
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 templates/content/Pagination.php
 ```hack
 20         public function calcPagination(int $itemPerPage = 4): self
 21         {
@@ -291,7 +286,7 @@ Split your response per page
 
 <br/>
 
-## Authentification/
+## Authentification/ 
 
 Lets you connect with you credentials
 
