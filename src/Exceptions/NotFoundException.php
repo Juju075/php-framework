@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use App\Enums\ErrorStatusCode;
 use Exception;
 
 /**
@@ -12,8 +13,8 @@ class NotFoundException extends Exception implements ExceptionInterface
 {
     public function __construct($message = "Page not found")
     {
-        $code = Enums::HTTP_NOT_FOUND;
-        if (!in_array(Enums::allErrorsCode[$code], Enums::allErrorsCode)) {
+        $code = ErrorStatusCode::HTTP_NOT_FOUND;
+        if (!in_array(ErrorStatusCode::errors[$code], ErrorStatusCode::errors)) {
             throw new \LogicException();
         }
         parent::__construct($message, $code);
