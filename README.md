@@ -280,10 +280,4 @@ Lets you connect with your credentials
 
 [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
 
-Next challenge
-<lu>
-    <li>Algorithmic</lu><br>
-    <li>Data structure</lu>
-</lu>
-<br/>
 
