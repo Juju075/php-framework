@@ -5,7 +5,6 @@ use App\Controller\ExceptionController;
 require '../vendor/autoload.php';
 require_once dirname(__DIR__) . '/config/const.php';
 
-require '../vendor/autoload.php';
 $app = new \App\Framework\App();
 
 try {
