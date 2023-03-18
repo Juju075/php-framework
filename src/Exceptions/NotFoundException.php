@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exception;
+namespace App\Exceptions;
 
 use Exception;
 
@@ -12,6 +12,10 @@ class NotFoundException extends Exception implements ExceptionInterface
 {
     public function __construct($message = "Page not found")
     {
-        parent::__construct($message, AbstractErrorCode::HTTP_NOT_FOUND);
+        $code = AbstractErrorCode::HTTP_NOT_FOUND;
+        if (!in_array(AbstractErrorCode::allErrorsCode[$code], AbstractErrorCode::allErrorsCode)) {
+            throw new \LogicException();
+        }
+        parent::__construct($message, $code);
     }
 }
