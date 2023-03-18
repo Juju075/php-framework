@@ -1,5 +1,7 @@
 <?php
 use App\Controller\ExceptionController;
+require '../vendor/autoload.php';
+require_once dirname(__DIR__) . '/config/const.php';
 
 require '../vendor/autoload.php';
 $app = new \App\Framework\App();
@@ -21,6 +23,5 @@ try {
         exit();
     }
     echo "[500 OU AUTRES] TODO : handle exceptions";
-    echo "[500 OU AUTRES] TODO : handle exceptions";
-    echo $e->getMessage();
+    echo $e->getMessage().' '. $e->getFile().' '. $e->getLine() . PHP_EOL;
 }
