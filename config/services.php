@@ -56,7 +56,7 @@ return [
     },
     \PDO::class => static function (Container $container) {
         $credentials = ($container->get(DotEnv::class))->getCredentials();
-        if ($credentials === null) {
+        if (empty($credentials)) {
             throw new LogicException();
         }
         return new \PDO(
