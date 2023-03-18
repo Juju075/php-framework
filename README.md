@@ -22,6 +22,8 @@ SkillValue
 <br/>
 
 UML
+### <a href="https://github.com/Juju075/php_framework/tree/main/UML">`📄 Voir les diagrammes`</a>
+<img src="/UML/diagClass.JPG">
 
 <br/>
 
