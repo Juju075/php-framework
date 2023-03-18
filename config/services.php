@@ -24,7 +24,8 @@ return [
     },
     \App\Controller\UserController::class => static function (Container $container) {
         return new \App\Controller\UserController(
-            $container->get(\App\Framework\View\View::class)
+            $container->get(\App\Framework\View\View::class),
+            $container->get(\PDO::class)
         );
     },
     \App\Controller\ContactController::class => static function (Container $container) {
@@ -53,25 +54,21 @@ return [
     \App\Framework\Database\Query::class => static function (Container $container) {
         return new \App\Framework\Database\Query();
     },
-    \PDO::class => static function () {
-        return new \PDO(DSN, USERNAME, PASSWORD
+    \PDO::class => static function (Container $container) {
+        $credentials = ($container->get(DotEnv::class))->getCredentials();
+        if ($credentials === null) {
+            throw new LogicException();
+        }
+        return new \PDO(
+            $credentials['DATABASE_DNS'],
+            $credentials['DATABASE_USERNAME'],
+            $credentials['DATABASE_PASSWORD']
         );
     },
-//    \PDO::class => static function () {
-//        $credentials = new DotEnv(ENV_PATH)->getCredentials();
-//
-//        $keys = ['DATABASE_DNS', 'DATABASE_USE', 'DATABASE_PASSWORD'];
-//        foreach ($keys as $key) {
-//            if (
-//                !array_key_exists($key, $credentials)) {
-//                throw new LogicException('env params missing', 500);
-//            }
-//        }
-//        return
-//            new \PDO($credentials['DATABASE_DNS'],
-//                $credentials['DATABASE_USE'],
-//                $credentials['DATABASE_PASSWORD']);
-//    },
+    DotEnv::class => static function () {
+        $path = dirname(__DIR__) . '/.env';
+        return new DotEnv($path);
+    },
     \App\Framework\Database\EntityManager::class => static function (Container $container) {
         return new \App\Framework\Database\EntityManager(
             $container->get(\PDO::class),
