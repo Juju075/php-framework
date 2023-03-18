@@ -49,8 +49,9 @@ This PSR describes a specification for autoloading classes from file paths. It i
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/public/index.php">📄 public/index.php</a>
 ```hack
-6      require '../vendor/autoload.php';     
-7      $app = new \App\Framework\App();
+6      require '../vendor/autoload.php';  
+7      require_once dirname(__DIR__) . '/config/const.php';   
+8      $app = new \App\Framework\App();
 ```
 
 <br/>
