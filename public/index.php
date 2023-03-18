@@ -16,6 +16,8 @@ try {
      * @var ExceptionController $execptionController
      */
     $exceptionController = $app->getContainer()->get(ExceptionController::class);
+    var_dump($execptionController);
+
     if ($e instanceof \App\Exceptions\NotFoundException) {
         $execptionController->pageNotFound();
         exit();
@@ -23,6 +25,11 @@ try {
     if ($e instanceof \App\Exceptions\ResourceNotFound) {
         $execptionController->resourceNotFound();
         exit();
+    }
+    if($e instanceof \PDOException)
+    {
+     $execptionController->pdoException();
+     exit();
     }
     echo "[500 OU AUTRES] TODO : handle exceptions";
     echo ' ' . $e->getMessage() . ' ' . $e->getFile() . ' ' . $e->getLine() . PHP_EOL;

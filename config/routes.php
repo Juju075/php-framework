@@ -33,7 +33,7 @@ return [
     new \App\Framework\Router\Route('/create-user', ['GET', 'POST'],
         [
             'controllerName' => \App\Controller\UserController::class,
-            'action' => 'create'
+            'action' => 'index'
         ]
     ),
     new \App\Framework\Router\Route('/contact', ['GET', 'POST'],
@@ -45,7 +45,7 @@ return [
     new \App\Framework\Router\Route('/login', ['GET', 'POST'],
         [
             'controllerName' => \App\Controller\AuthController::class,
-            'action' => 'login'
+            'action' => 'index'
         ]
     ),
     new \App\Framework\Router\Route('/logout', ['GET'],
