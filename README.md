@@ -200,8 +200,8 @@ NotFoundException | ResourceNotFound | ect...
 12     {
 13         public function __construct($message = "Page not found")
 14         {
-15             $code = Enums::HTTP_NOT_FOUND;
-16             if (!in_array(Enums::allErrorsCode[$code], Enums::allErrorsCode)) {
+15             $code = ErrorStatusCode::HTTP_NOT_FOUND;
+16             if (!in_array(ErrorStatusCode::errors[$code], ErrorStatusCode::errors)) {
 ```
 
 <br/>

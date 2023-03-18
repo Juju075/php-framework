@@ -8,6 +8,10 @@ class ResourceNotFound extends  \Exception implements ExceptionInterface
 
     public function __construct($message = 'Resource not found')
     {
-        parent::__construct($message,ErrorStatusCode::HTTP_INTERNAL_SERVER_ERROR);
+        $code = ErrorStatusCode::HTTP_INTERNAL_SERVER_ERROR;
+        if (!in_array(ErrorStatusCode::errors[$code], ErrorStatusCode::errors)) {
+            throw new \LogicException();
+        }
+        parent::__construct($message,$code);
     }
 }
