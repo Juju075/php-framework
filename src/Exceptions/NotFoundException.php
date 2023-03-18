@@ -12,8 +12,8 @@ class NotFoundException extends Exception implements ExceptionInterface
 {
     public function __construct($message = "Page not found")
     {
-        $code = AbstractErrorCode::HTTP_NOT_FOUND;
-        if (!in_array(AbstractErrorCode::allErrorsCode[$code], AbstractErrorCode::allErrorsCode)) {
+        $code = Enums::HTTP_NOT_FOUND;
+        if (!in_array(Enums::allErrorsCode[$code], Enums::allErrorsCode)) {
             throw new \LogicException();
         }
         parent::__construct($message, $code);
