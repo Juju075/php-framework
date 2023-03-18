@@ -195,12 +195,13 @@ NotFoundException | RessourceNotFound | ect...
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Exceptions/NotFoundException.php">📄 src/Exceptions/NotFoundException.php</a>
-```hack
+```hack       
 11     class NotFoundException extends Exception implements ExceptionInterface
 12     {
 13         public function __construct($message = "Page not found")
 14         {
-15             parent::__construct($message, AbstractErrorCode::HTTP_NOT_FOUND);
+15             $code = AbstractErrorCode::HTTP_NOT_FOUND;
+16             if (!in_array(AbstractErrorCode::allErrorsCode[$code], AbstractErrorCode::allErrorsCode)) {
 ```
 
 <br/>
