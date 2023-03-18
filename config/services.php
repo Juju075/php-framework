@@ -65,7 +65,7 @@ return [
             $credentials['DATABASE_PASSWORD']
         );
     },
-    DotEnv::class => static function () {
+    \App\Framework\Database\DotEnv::class => static function () {
         $path = dirname(__DIR__) . '/.env';
         return new DotEnv($path);
     },
