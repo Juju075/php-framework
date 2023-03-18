@@ -277,7 +277,7 @@ Lets you connect with your credentials
 
 > This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) , SOLID principle, pattern designs, implement PSR.
 
-> During those months I learned a lot about PHP especially how I can use objects to my advantage, interface, abstract classes work effectively with arrays, type correctly. spread my responsibility and refactor my code.
+> During those months I learned a lot about PHP especially how I can use objects to my advantage, interface, abstract classes, the power of inheritance work effectively with arrays, type correctly. spread my responsibility and refactor my code.
 
 [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
 
