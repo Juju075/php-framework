@@ -17,7 +17,7 @@ Unit tests in Github Action CI/CD
 
 <br/>
 
-SkillValue
+SkillValue | HackerRank
 
 <br/>
 
@@ -279,5 +279,9 @@ Lets you connect with your credentials
 > During those months I learned a lot about PHP especially how I can use objects to my advantage, interface, abstract classes work effectively with arrays, type correctly. spread my responsibility and refactor my code.
 
 [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
+<lu>
+    <li>Algorithmes</lu><br>
+    <li>Structure de données</lu>
+</lu>
 <br/>
 
