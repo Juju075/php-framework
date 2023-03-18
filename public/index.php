@@ -16,8 +16,6 @@ try {
      * @var ExceptionController $execptionController
      */
     $exceptionController = $app->getContainer()->get(ExceptionController::class);
-    var_dump($execptionController);
-
     if ($e instanceof \App\Exceptions\NotFoundException) {
         $execptionController->pageNotFound();
         exit();
