@@ -50,7 +50,7 @@ class DotEnv
             if ($key === 'DATABASE_DNS') {
                 $this->credentials[$key] = $value;
             }
-            if ($key === 'DATABASE_USERNAME') {
+            if ($key === 'DATABASE_USER') {
                 $this->credentials[$key] = $value;
             }
             if ($key === 'DATABASE_PASSWORD') {

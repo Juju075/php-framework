@@ -61,7 +61,7 @@ return [
         }
         return new \PDO(
             $credentials['DATABASE_DNS'],
-            $credentials['DATABASE_USERNAME'],
+            $credentials['DATABASE_USER'],
             $credentials['DATABASE_PASSWORD']
         );
     },
