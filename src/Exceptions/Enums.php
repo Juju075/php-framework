@@ -2,7 +2,7 @@
 
 namespace App\Exceptions;
 
-abstract class AbstractErrorCode
+abstract class Enums
 {
     public const HTTP_NOT_FOUND = 404;
     public const HTTP_FORBIDDEN = 503;
