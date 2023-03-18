@@ -282,8 +282,8 @@ Lets you connect with your credentials
 
 Next challenge
 <lu>
-    <li>Algorithmes</lu><br>
-    <li>Structure de données</lu>
+    <li>Algorithmic</lu><br>
+    <li>Data structure</lu>
 </lu>
 <br/>
 
