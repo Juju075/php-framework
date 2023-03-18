@@ -188,9 +188,9 @@ Interrogate your database and return a response
 
 ## Exceptions 
 
-Create your own exception that overide /Exception
+Create your own exception that override /Exception
 
-NotFoundException | RessourceNotFound | ect...
+NotFoundException | ResourceNotFound | ect...
 
 <br/>
 
@@ -200,8 +200,8 @@ NotFoundException | RessourceNotFound | ect...
 12     {
 13         public function __construct($message = "Page not found")
 14         {
-15             $code = AbstractErrorCode::HTTP_NOT_FOUND;
-16             if (!in_array(AbstractErrorCode::allErrorsCode[$code], AbstractErrorCode::allErrorsCode)) {
+15             $code = Enums::HTTP_NOT_FOUND;
+16             if (!in_array(Enums::allErrorsCode[$code], Enums::allErrorsCode)) {
 ```
 
 <br/>
