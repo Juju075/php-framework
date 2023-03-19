@@ -24,9 +24,9 @@ final class App
     public function __construct()
     {
         $services = require dirname(__DIR__, 2) . '/config/services.php';
-        $this->container = new Container($services); //TODO Design Pattern
+        $this->container = new Container($services);
         $routes = require dirname(__DIR__, 2) . '/config/routes.php';
-        $this->router = new Router($routes); //TODO Design Pattern
+        $this->router = new Router($routes);
     }
 
     public function getContainer(): Container
