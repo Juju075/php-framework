@@ -1,9 +1,11 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Framework;
 
-use App\Exception\NotFoundException;
+use App\Exceptions\NotFoundException;
 use App\Framework\Container\Container;
+use App\Framework\Database\DotEnv;
 use App\Framework\Router\Request;
 use App\Framework\Router\ControllerResolver;
 use App\Framework\Router\Route;
@@ -16,13 +18,15 @@ final class App
     private Router $router;
     private ?Route $route = null;
 
+    /**
+     * @throws Exception
+     */
     public function __construct()
     {
         $services = require dirname(__DIR__, 2) . '/config/services.php';
-        require_once  dirname(__DIR__, 2) . '/config/const.php';
-        $this->container = new Container($services);
+        $this->container = new Container($services); //TODO Design Pattern
         $routes = require dirname(__DIR__, 2) . '/config/routes.php';
-        $this->router = new Router($routes);
+        $this->router = new Router($routes); //TODO Design Pattern
     }
 
     public function getContainer(): Container
@@ -39,7 +43,7 @@ final class App
      * @throws NotFoundException
      * @throws Exception
      */
-    public function request()
+    public function request(): void
     {
         $this->route = ($this->router)->match
         (
