@@ -55,7 +55,7 @@ return [
         return new \App\Framework\Database\Query();
     },
     \PDO::class => static function (Container $container) {
-        $credentials = ($container->get(DotEnv::class))->getCredentials();
+        $credentials = ($container->get(DotEnv::class));
         if (empty($credentials)) {
             throw new LogicException();
         }
@@ -67,7 +67,7 @@ return [
     },
     \App\Framework\Database\DotEnv::class => static function () {
         $path = dirname(__DIR__) . '/.env';
-        return new DotEnv($path);
+        return (new DotEnv())->load($path);
     },
     \App\Framework\Database\EntityManager::class => static function (Container $container) {
         return new \App\Framework\Database\EntityManager(

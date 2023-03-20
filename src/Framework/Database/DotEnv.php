@@ -8,18 +8,6 @@ class DotEnv
     protected string $path;
     protected array $credentials = [];
 
-    /**
-     * @throws Exception
-     */
-    public function __construct(string $path)
-    {
-        if (!file_exists($path)) {
-            throw new Exception();
-        }
-        $this->path = $path;
-        $this->load();
-    }
-
     public function getCredentials(): array
     {
         return $this->credentials;
@@ -28,9 +16,13 @@ class DotEnv
     /**
      * @throws Exception
      */
-    public function load(): void
+    public function load(string $path): array
     {
-        if (!is_readable($this->path)) {
+        if (!file_exists($path)) {
+            throw new Exception();
+        }
+
+        if (!is_readable($path)) {
             throw new \LogicException('');
         }
 
@@ -46,16 +38,19 @@ class DotEnv
             $scrapped[$key] = $value;
         }
 
+        $credentials = [];
         foreach ($scrapped as $key => $value) {
             if ($key === 'DATABASE_DNS') {
-                $this->credentials[$key] = $value;
+                $credentials[$key] = $value;
             }
             if ($key === 'DATABASE_USER') {
-                $this->credentials[$key] = $value;
+                $credentials[$key] = $value;
             }
             if ($key === 'DATABASE_PASSWORD') {
-                $this->credentials[$key] = $value;
+                $credentials[$key] = $value;
             }
         }
+
+        return $credentials;
     }
 }
