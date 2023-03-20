@@ -261,13 +261,19 @@ Split your response per page
 
 <br/>
 
-## Authentification/
+## Authentication/
 
 Lets you connect with your credentials
 
 <br/>
 
 ## <a href="">Session Interface</a>
+
+<br/>
+
+## Templating
+
+<br/>
 
 <br/>
 
