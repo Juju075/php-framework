@@ -271,11 +271,6 @@ Lets you connect with your credentials
 
 <br/>
 
-## Templating Engine
-
-<br/>
-
-<br/>
 
 <br/>
 
