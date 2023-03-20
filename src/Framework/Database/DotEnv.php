@@ -6,12 +6,6 @@ use Exception;
 class DotEnv
 {
     protected string $path;
-    protected array $credentials = [];
-
-    public function getCredentials(): array
-    {
-        return $this->credentials;
-    }
 
     /**
      * @throws Exception
