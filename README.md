@@ -271,7 +271,7 @@ Lets you connect with your credentials
 
 <br/>
 
-## Templating
+## Templating Engine
 
 <br/>
 
