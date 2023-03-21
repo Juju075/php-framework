@@ -94,7 +94,8 @@ The goal of this PSR is to establish a common mechanism for event-based extensio
 
 ## Router
 
-Match the url with your routes
+Match the url with your routes using Regex depending on routes requested.
+Recognize all methods [GET, POST, PUT, DELETE]
 
 <br/>
 
