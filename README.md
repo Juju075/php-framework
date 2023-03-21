@@ -110,6 +110,8 @@ Match the url with your routes
 
 ## Object Relation Model w/o reflexion
 
+### run this script w custom CLI like create database
+
 Use of a recursive function and file system to scrape your entity folder and reconstruct a model of your database 'tables and columns'
 
 <br/>
