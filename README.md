@@ -2,10 +2,8 @@
 
 <br/>
 
-> Framework personnel léger inpiré de Symfony<br/>
-> _Natif PHP_<br/>
-> réalisé chez Alpha Soft _(ESN d'applicatifs métiers, PHP Symfony)_<br/>
-> [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
+> Framework personnel léger inpiré de Symfony<br/> > _Natif PHP_<br/>
+> réalisé chez Alpha Soft _(ESN d'applicatifs métiers, PHP Symfony)_<br/> > [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
 >
 > © Copyright 2023
 
@@ -19,11 +17,17 @@ Unit tests in Github Action CI/CD
 
 SkillValue | HackerRank
 
+## Topics<br>
+| <a href="https://github.com/Juju075/php_framework#-see-diagrams">UML</a> | <a href="https://github.com/Juju075/php_framework#mvc-architecture">MVC Architecture</a> | <a href="https://github.com/Juju075/php_framework#autoloading-standard-psr-4">Autoloading</a> | <a href="https://github.com/Juju075/php_framework#container-interface-psr-11">Container Interface</a> | <a href="https://github.com/Juju075/php_framework#event-dispatcher-psr-14">Event Dispatcher</a> | <a href="https://github.com/Juju075/php_framework#router">Router</a> | ORM
+| FormBuilder | QueryBuilder | Hydratation | Template Engine | Repository | Exceptions | DotEnv
+| Csrf Token | Pagination | Authentification | Session Interface
+
 <br/>
 
 ## UML
 
 ### <a href="https://github.com/Juju075/php_framework/tree/main/UML">`📄 See diagrams`</a>
+
 <div align="center"><img src="/UML/diagClass.JPG"></div>
 
 <br/>
@@ -41,6 +45,7 @@ SkillValue | HackerRank
 ## Autoloading Standard (PSR-4)
 
 This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. This PSR also describes where to place files that will be autoloaded according to the specification.
+
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 
 <h3>Index</h3>
@@ -48,9 +53,10 @@ This PSR describes a specification for autoloading classes from file paths. It i
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/public/index.php">📄 public/index.php</a>
+
 ```hack
-6      require '../vendor/autoload.php';  
-7      require_once dirname(__DIR__) . '/config/const.php';   
+6      require '../vendor/autoload.php';
+7      require_once dirname(__DIR__) . '/config/const.php';
 8      $app = new \App\Framework\App();
 ```
 
@@ -67,6 +73,7 @@ The goal set by ContainerInterface is to standardize how frameworks and librarie
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Container/Container.php">`📄 src/Framework/Container/Container.php`</a>
+
 ```hack
 19         public function get($id)
 20         {
@@ -77,7 +84,6 @@ The goal set by ContainerInterface is to standardize how frameworks and librarie
 <br/>
 
 ## Event Dispatcher (PSR-14)
- 
 
 Event Dispatching is a common and well-tested mechanism to allow developers to inject logic into an application easily and consistently.
 
@@ -86,6 +92,7 @@ The goal of this PSR is to establish a common mechanism for event-based extensio
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Event/EventManager.php">`📄 src/Framework/Event/EventManager.php`</a>
+
 ```hack
 5      class EventManager implements EventDispatcherInterface
 ```
@@ -100,6 +107,7 @@ Recognize all methods [GET, POST, PUT, DELETE]
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Router/Router.php">`📄 src/Framework/Router/Router.php`</a>
+
 ```hack
 28                 $isRegex = strpos($route->getUrl(), "/^") !== false;
 29                 if ($isRegex && preg_match($route->getUrl(), $currentUrl) === 1) {
@@ -117,7 +125,8 @@ Use of a recursive function and file system to scrape your entity folder and rec
 
 <br/>
 
-###  <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/DirectoryResolver.php">📄 src/Framework/Database/DirectoryResolver.php</a>
+### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/DirectoryResolver.php">📄 src/Framework/Database/DirectoryResolver.php</a>
+
 ```hack
 49         public static function getClassNameAndNamespace(array $listing): array
 50         {
@@ -135,6 +144,7 @@ Build your formType and obtain a html
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Form/Type/PostType.php">📄 src/Form/Type/PostType.php</a>
+
 ```hack
 17         public function formBuilder(): Form
 18         {
@@ -151,22 +161,24 @@ Build your query request on the fly
 <br/>
 
 ### <a  href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/EntityManager.php">📄 src/Framework/Database/EntityManager.php</a>
+
 ```hack
 32             $query = (new Query())->insert($tableName, $keysValues);
 33             $this->request = $this->pdo->prepare($query);
-34     
+34
 35             foreach ($keysValues as $key => $value) {
 ```
 
 <br/>
 
-## Hydratation 
+## Hydratation
 
 Allows you to hydrate any object
 
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/Hydrator.php">📄 src/Framework/Database/Hydrator.php</a></a>
+
 ```hack
 25             $dataClean = $isEntity ? $dataArray : FieldResolver::ValuesToClean($dataArray);
 26             $instance = new $className();
@@ -183,6 +195,7 @@ Generate output page on the fly
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Controller/PostController.php">📄 src/Controller/PostController.php</a></a>
+
 ```hack
 36            $template = new \Template('content/posts.php', ['posts' => $posts]);
 37            echo $this->render($template->getPath(), $template->getParameters());
@@ -190,13 +203,14 @@ Generate output page on the fly
 
 <br/>
 
-## Repository 
+## Repository
 
 Interrogate your database and return a response
 
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Repository/AbstractRepository.php">📄 src/Framework/Repository/AbstractRepository.php</a>
+
 ```hack
 27         public function selectOneById(array $params): object
 28         {
@@ -207,7 +221,7 @@ Interrogate your database and return a response
 
 <br/>
 
-## Exceptions 
+## Exceptions
 
 Create your own exception that override /Exception
 
@@ -216,7 +230,8 @@ NotFoundException | ResourceNotFound | ect...
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Exceptions/NotFoundException.php">📄 src/Exceptions/NotFoundException.php</a>
-```hack       
+
+```hack
 11     class NotFoundException extends Exception implements ExceptionInterface
 12     {
 13         public function __construct($message = "Page not found")
@@ -234,6 +249,7 @@ Load,read your .env file perform and extraction your params as \[key=>value\]
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Database/DotEnv.php">📄 src/Framework/Database/DotEnv.php</a>
+
 ```hack
 49             foreach ($scrapped as $key => $value) {
 50                 if ($key === 'DATABASE_DNS') {
@@ -250,6 +266,7 @@ Generate the crsf token for you
 <br/>
 
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Framework/Form/Token.php">📄 src/Framework/Form/Token.php</a>
+
 ```hack
 31         public function __toString(): string
 32         {
@@ -266,8 +283,8 @@ Split your response per page
 
 <br/>
 
-
 ### <a href="https://github.com/Juju075/php_framework/blob/main/templates/content/Pagination.php">📄 templates/content/Pagination.php</a>
+
 ```hack
 20         public function calcPagination(int $itemPerPage = 4): self
 21         {
@@ -288,7 +305,6 @@ Lets you connect with your credentials
 
 <br/>
 
-
 <br/>
 
 <h3>What i learned?</h3>
@@ -300,5 +316,3 @@ Lets you connect with your credentials
 > Now i'm proud to be able to code a structured and maintainable application.
 
 [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
-
-
