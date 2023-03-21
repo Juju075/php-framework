@@ -176,6 +176,20 @@ Allows you to hydrate any object
 
 <br/>
 
+## Template Engine
+
+Generate the output page
+
+<br/>
+
+### <a href="https://github.com/Juju075/php_framework/blob/main/src/Controller/PostController.php">📄 src/Controller/PostController.php</a></a>
+```hack
+36            $template = new \Template('content/posts.php', ['posts' => $posts]);
+37            echo $this->render($template->getTemplate(), $template->getParameters());
+```
+
+<br/>
+
 ## Repository 
 
 Interrogate your database and return a response
