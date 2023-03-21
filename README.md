@@ -185,7 +185,7 @@ Generate the output page
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Controller/PostController.php">📄 src/Controller/PostController.php</a></a>
 ```hack
 36            $template = new \Template('content/posts.php', ['posts' => $posts]);
-37            echo $this->render($template->getTemplate(), $template->getParameters());
+37            echo $this->render($template->getPath(), $template->getParameters());
 ```
 
 <br/>
