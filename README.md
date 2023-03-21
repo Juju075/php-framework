@@ -178,7 +178,7 @@ Allows you to hydrate any object
 
 ## Template Engine
 
-Generate the output page
+Generate output page on the fly
 
 <br/>
 
