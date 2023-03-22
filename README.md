@@ -199,7 +199,7 @@ Generate output page on the fly
 ### <a href="https://github.com/Juju075/php_framework/blob/main/src/Controller/PostController.php">📄 src/Controller/PostController.php</a></a>
 
 ```hack
-36            $template = new \Template('content/posts.php', ['posts' => $posts]);
+36            $template = new Template(TEMPLATE_DIRECTORY.'content/posts.php', 1, ['posts' => $posts]);
 37            TemplateResolver::createChildTemplateContent((string)$template);
 38            echo $this->render($template->getPath(), $template->getParameters());
 ```
