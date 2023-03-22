@@ -11,8 +11,6 @@
 
 <br/>
 
-Unit tests in Github Action CI/CD
-
 <br/>
 
 SkillValue | HackerRank
