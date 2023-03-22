@@ -2,10 +2,13 @@
 
 class TemplateResolver
 {
-        public static function createChildTemplateContent(string $content): void
+        public static function createChildTemplateContent(string $path, string $content): void
         {
-            //verif sinon creer childtemplate contenu (string)Template;
-            //ecrit dedans (quoi ecrire?)
             var_dump($content);
+            if(!file_exists($path))
+            {
+                fopen($path,'w');
+                file_put_contents($path, $content);
+            }
         }
 }
