@@ -200,7 +200,8 @@ Generate output page on the fly
 
 ```hack
 36            $template = new \Template('content/posts.php', ['posts' => $posts]);
-37            echo $this->render($template->getPath(), $template->getParameters());
+37            TemplateResolver::createChildTemplateContent((string)$template);
+38            echo $this->render($template->getPath(), $template->getParameters());
 ```
 
 <br/>
