@@ -10,7 +10,7 @@
 <br/>
 
 <br/>
-
+Unit tests in Github Action CI/CD
 <br/>
 
 SkillValue | HackerRank
@@ -98,7 +98,6 @@ The goal of this PSR is to establish a common mechanism for event-based extensio
 ```
 
 <br/>
-
 
 ## Router
 
@@ -321,3 +320,7 @@ Lets you connect with your credentials
 [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
 
 <a href="https://github.com/Juju075/php_framework#topics">Top of page</a>
+
+# Other projects:
+
+<a href="https://github.com/Juju075/symfony-devops">Symfony 6 + PHP8.1.0 + PHPUnit + Jenkins + Docker</a>
