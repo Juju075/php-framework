@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use App\Exception\NotFoundException;
-use App\Exception\ResourceNotFound;
+use App\Exceptions\NotFoundException;
+use App\Exceptions\ResourceNotFound;
 
 class MainController extends AbstractController
 {

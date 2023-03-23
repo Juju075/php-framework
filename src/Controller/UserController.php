@@ -2,19 +2,20 @@
 
 namespace App\Controller;
 
-use App\Exception\NotFoundException;
-use App\Exception\ResourceNotFound;
+use App\Exceptions\NotFoundException;
+use App\Exceptions\ResourceNotFound;
 use App\Form\Type\UserType;
 
-class UserController extends AbstractController
+class UserController extends AbstractController implements controllerInterface
 {
     /**
      * @throws ResourceNotFound
      * @throws NotFoundException
      */
-    public function create()
+    public function index()
     {
         $form = self::createForm(UserType::class);
         echo $this->render('content/create-user.php', ['form' => (string)$form]);
     }
+
 }

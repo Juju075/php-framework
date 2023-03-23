@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use App\Exception\NotFoundException;
-use App\Exception\ResourceNotFound;
+use App\Exceptions\NotFoundException;
+use App\Exceptions\ResourceNotFound;
 use App\Framework\Database\EntityManager;
 use App\Framework\Database\Query;
 use App\Framework\Form\Form;
@@ -15,7 +15,7 @@ use PDO;
 
 /**
  * All Controllers don't need database relation
- * eg: MainController | ExceptController
+ * eg: MainController |
  */
 abstract class AbstractController
 {

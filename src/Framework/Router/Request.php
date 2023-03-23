@@ -2,7 +2,7 @@
 
 namespace App\Framework\Router;
 
-use App\Exception\NotFoundException;
+use App\Exceptions\NotFoundException;
 
 class Request
 {

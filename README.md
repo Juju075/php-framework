@@ -22,6 +22,7 @@ SkillValue | HackerRank
 | <a href="https://github.com/Juju075/php_framework#querybuilder">QueryBuilder</a> | <a href="https://github.com/Juju075/php_framework#hydratation">Hydratation</a> | <a href="https://github.com/Juju075/php_framework#template-engine">Template Engine</a> | <a href="https://github.com/Juju075/php_framework#repository">Repository</a> | <a href="https://github.com/Juju075/php_framework#exceptions">Exceptions</a> | <a href="https://github.com/Juju075/php_framework#dotenv">DotEnv</a>
 | <a href="https://github.com/Juju075/php_framework#csrf-token">Csrf Token</a> | <a href="https://github.com/Juju075/php_framework#pagination">Pagination </a>|<br> | <a href="https://github.com/Juju075/php_framework#authentication">Authentification</a> | <a href="https://github.com/Juju075/php_framework#session-interface">Session Interface</a> | ...
 
+<a href="https://github.com/Juju075/php_framework#other-projects">Other projects:</a>
 <br/>
 
 ## UML

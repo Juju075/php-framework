@@ -1,9 +1,13 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
 use App\Controller\ExceptionController;
 
 require '../vendor/autoload.php';
 require_once dirname(__DIR__) . '/config/const.php';
+//var_dump(php_ini_loaded_file());
+
 
 $app = new \App\Framework\App();
 

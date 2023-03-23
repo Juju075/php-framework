@@ -2,8 +2,8 @@
 
 namespace App\Framework\View;
 
-use App\Exception\NotFoundException;
-use App\Exception\ResourceNotFound;
+use App\Exceptions\NotFoundException;
+use App\Exceptions\ResourceNotFound;
 
 class View
 {

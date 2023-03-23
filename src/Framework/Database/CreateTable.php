@@ -8,7 +8,8 @@ class CreateTable
 
     public function __construct()
     {
-        //dotEnv
+        echo'function construct';
+        die();
         $this->pdo = new \PDO(DSN, USERNAME, PASSWORD);
     }
 

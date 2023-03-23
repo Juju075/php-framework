@@ -2,7 +2,8 @@
 
 namespace App\Framework\Router;
 
-use App\Exception\NotFoundException;
+use App\Controller\controllerInterface;
+use App\Exceptions\NotFoundException;
 use App\Framework\Container\Container;
 
 /**
@@ -20,11 +21,13 @@ class ControllerResolver
     /**
      * @throws NotFoundException
      */
-    public function resolve(?Route $route)
+    public function resolve(?Route $route): ?controllerInterface
     {
+
         if ($route === null) {
             throw new NotFoundException();
         }
+
         $controllerSettings = $route->getController();
         $action = $controllerSettings['action'];
         $controller = $this->container->get($controllerSettings['controllerName']);

@@ -1,6 +1,7 @@
 <?php
-
+declare(strict_types=1);
 namespace App\Framework\Container;
+
 
 /**
  * Fetching and resolve arguments
@@ -16,19 +17,42 @@ class Container implements ContainerInterface
         $this->services = $services;
     }
 
+
     public function get($id)
     {
-        if ($this->has($id)) {
+        if ($this->has($id) === false && !$this->services[$id]($this) instanceof \PDOException) {
             $this->entries[$id] = $this->services[$id]($this);
+        }elseif ($this->services[$id]($this) instanceof \PDOException)
+        {
+            echo'Exception PDO detected';
         }
         return $this->entries[$id];
     }
 
+//    public function get($id)
+//    {
+//        if ($this->has($id)) {
+//            $this->entries[$id] = $this->services[$id]($this);
+//        }
+//        return $this->entries[$id];
+//    }
+
+
+
     public function has($id): bool
     {
         if (!isset($this->entries[$id])) {
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
+
+//    public function has($id): bool
+//    {
+//        if (!isset($this->entries[$id])) {
+//            return true;
+//        }
+//        return false;
+//    }
+
 }

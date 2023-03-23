@@ -3,8 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\Post;
-use App\Exception\NotFoundException;
-use App\Exception\ResourceNotFound;
+use App\Exceptions\NotFoundException;
+use App\Exceptions\ResourceNotFound;
 use App\Form\Type\PostType;
 use App\Framework\Database\CreateTable;
 use App\Framework\Database\DotEnv;
@@ -14,8 +14,10 @@ use App\Framework\Router\Request;
 use App\Framework\View\View;
 use Exception;
 use Pagination;
+use Template;
+use TemplateResolver;
 
-class PostController extends AbstractController
+class PostController extends AbstractController implements controllerInterface
 {
     /**
      * @return void
@@ -33,11 +35,15 @@ class PostController extends AbstractController
         if (empty($posts)) {
             throw new NotFoundException('Page not found', 404);
         }
-        echo $this->render('content/posts.php', ['posts' => $posts]);
+        $template = new Template(TEMPLATE_DIRECTORY.'content/posts.php', 1,  ['posts' => $posts]);
+        TemplateResolver::createChildTemplateContent($template->getChildTemplate(), (string)$template);
+        echo $this->render($template->getChildTemplate(), $template->getParameters());
     }
 
     public function createTables()
     {
+        echo'function createTales';
+        die();
         $ct = new CreateTable();
         $ct->createTable();
     }

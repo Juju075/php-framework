@@ -2,17 +2,17 @@
 
 namespace App\Controller;
 
-use App\Exception\NotFoundException;
-use App\Exception\ResourceNotFound;
+use App\Exceptions\NotFoundException;
+use App\Exceptions\ResourceNotFound;
 use App\Form\Type\AuthType;
 
-class AuthController extends AbstractController
+class AuthController extends AbstractController implements controllerInterface
 {
     /**
      * @throws ResourceNotFound
      * @throws NotFoundException
      */
-    public function login()
+    public function index()
     {
         $form = $this->createForm(AuthType::class);
         echo $this->render('content/login.php', ['form' => (string)$form]);

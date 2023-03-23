@@ -3,7 +3,7 @@
 namespace App\Framework\Repository;
 
 use App\Entity\Post;
-use App\Exception\NotFoundException;
+use App\Exceptions\NotFoundException;
 use App\Framework\Database\Query;
 use PDO;
 
