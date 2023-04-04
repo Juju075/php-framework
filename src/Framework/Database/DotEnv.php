@@ -21,7 +21,7 @@ class DotEnv
         }
 
         $scrapped = [];
-        $lines = file($this->path, FILE_SKIP_EMPTY_LINES);
+        $lines = file($path, FILE_SKIP_EMPTY_LINES);
         foreach ($lines as $line) {
             if (strpos(trim($line), '#') === 0) {
                 continue;
@@ -44,7 +44,6 @@ class DotEnv
                 $credentials[$key] = $value;
             }
         }
-
         return $credentials;
     }
 }

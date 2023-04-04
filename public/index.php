@@ -29,7 +29,7 @@ try {
     }
     if($e instanceof \PDOException)
     {
-     $execptionController->pdoException();
+        $exceptionController->pdoException($e->getMessage());
      exit();
     }
     echo "[500 OU AUTRES] TODO : handle exceptions";

@@ -54,6 +54,8 @@ return [
     \App\Framework\Database\Query::class => static function (Container $container) {
         return new \App\Framework\Database\Query();
     },
+
+
     \PDO::class => static function (Container $container) {
         $credentials = ($container->get(DotEnv::class));
         if (empty($credentials)) {
@@ -65,6 +67,8 @@ return [
             $credentials['DATABASE_PASSWORD']
         );
     },
+
+
     \App\Framework\Database\DotEnv::class => static function () {
         $path = dirname(__DIR__) . '/.env';
         return (new DotEnv())->load($path);

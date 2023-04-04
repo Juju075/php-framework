@@ -31,12 +31,12 @@ class ExceptionController extends AbstractController
     }
 
     /**
-     * @throws ResourceNotFound
-     * @throws NotFoundException
+     * @return void
      */
-    public function pdoException(): void
+    public function pdoException(string $errorMessage): void
     {
         header("HTTP/1.0 500 Not Found");
-        echo parent::render('/pdo-exception.php');
+        echo $errorMessage;
+        //echo parent::render('/pdo-exception.php');
     }
 }
