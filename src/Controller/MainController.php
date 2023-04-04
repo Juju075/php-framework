@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use App\Entity\Person;
 use App\Exceptions\NotFoundException;
 use App\Exceptions\ResourceNotFound;
 
