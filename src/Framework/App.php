@@ -5,7 +5,6 @@ namespace App\Framework;
 
 use App\Exceptions\NotFoundException;
 use App\Framework\Container\Container;
-use App\Framework\Database\DotEnv;
 use App\Framework\Router\Request;
 use App\Framework\Router\ControllerResolver;
 use App\Framework\Router\Route;

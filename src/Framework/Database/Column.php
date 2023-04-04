@@ -63,7 +63,7 @@ class Column implements ColumnInterface
                 return Column::DATETIME;
             default:
                 throw new \LogicException(
-                    "Please insure to select one of avaible option $this->type is not reconized"
+                    "Please insure to select one of available option $this->type is not recognized"
                     , 500);
         }
     }

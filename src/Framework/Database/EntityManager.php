@@ -7,7 +7,7 @@ use PDOStatement;
 
 /**
  * The reason it's split into two methods is to help with batch data loading...
- * persist() - multiple insteanceOf
+ * persist() - multiple instanceOf
  * flush() - send to db
  */
 class EntityManager implements DatabaseInterface

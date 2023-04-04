@@ -310,7 +310,7 @@ Lets you connect with your credentials
 
 <br/>
 
-<h3>What i learned?</h3>
+### What i learned? 
 
 > This framework respects basic coding usage, PHP clean code inspired from James Padolsey(clean code in javascript) , SOLID principle, pattern designs, implement PSR.
 

@@ -15,6 +15,12 @@ class Input implements FieldInterface
     private string $placeHolder;
     private ?string $value = null;
 
+    //TODI
+    //->add('zipcode', TextType::class,
+    //['attr'=>
+    //['class'=>'form-control'],
+    //'label'=>'Zipcode'
+    //])
     public function __construct(
         string $type,
         string $name,

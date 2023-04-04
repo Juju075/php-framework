@@ -43,7 +43,6 @@ class PostController extends AbstractController implements controllerInterface
     public function createTables()
     {
         echo'function createTales';
-        die();
         $ct = new CreateTable();
         $ct->createTable();
     }
