@@ -9,12 +9,6 @@
 
 <br/>
 
-<br/>
-Unit tests in Github Action CI/CD
-<br/>
-
-SkillValue | HackerRank
-
 ## Topics<br>
 
 | <a href="https://github.com/Juju075/php_framework#uml">UML</a> | <a href="https://github.com/Juju075/php_framework#mvc-architecture">MVC Architecture</a> | <a href="https://github.com/Juju075/php_framework#autoloading-standard-psr-4">Autoloading</a> | <a href="https://github.com/Juju075/php_framework#container-interface-psr-11">Container Interface</a> | <a href="https://github.com/Juju075/php_framework#event-dispatcher-psr-14">Event Dispatcher</a> | <a href="https://github.com/Juju075/php_framework#router">Router</a> | <a href="https://github.com/Juju075/php_framework#object-relation-model-wo-reflexion">ORM</a>
