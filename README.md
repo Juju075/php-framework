@@ -320,7 +320,7 @@ Lets you connect with your credentials
 
 
 <ul>
-    <li><a href="https://github.com/Juju075/symfony-devops">Docker + PHP8.1.0 + Mysql 8 + Jenkins</a></li>
+    <li><a href="https://github.com/Juju075/symfony-devops">Symfony devops</a></li>
     <li><a href="https://github.com/Juju075/api-rest">Api REST (ApiPlatform)</a></li>
     <li><a href="#">Javascript Advanced</a></li>
     <li><a href="#">custom Framework inspired by React</a></li>
