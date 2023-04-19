@@ -322,7 +322,7 @@ Lets you connect with your credentials
 <ul>
     <li><a href="https://github.com/Juju075/symfony-devops">Symfony devops</a></li>
     <li><a href="https://github.com/Juju075/api-rest">Api REST (ApiPlatform)</a></li>
-    <li><a href="#">Javascript Advanced</a></li>
-    <li><a href="#">custom Framework inspired by React</a></li>
+    <li><a href="#">Javascript Advanced (futur project)</a></li>
+    <li><a href="#">custom Framework inspired by React(futur project)</a></li>
 </ul>
 <br>
