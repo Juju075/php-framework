@@ -11,17 +11,17 @@
 
 ## Topics<br>
 
-| <a href="https://github.com/Juju075/php-framework#uml">UML</a> | <a href="https://github.com/Juju075/php_framework#mvc-architecture">MVC Architecture</a> | <a href="https://github.com/Juju075/php_framework#autoloading-standard-psr-4">Autoloading</a> | <a href="https://github.com/Juju075/php_framework#container-interface-psr-11">Container Interface</a> | <a href="https://github.com/Juju075/php_framework#event-dispatcher-psr-14">Event Dispatcher</a> | <a href="https://github.com/Juju075/php_framework#router">Router</a> | <a href="https://github.com/Juju075/php_framework#object-relation-model-wo-reflexion">ORM</a>
+| <a href="https://github.com/Juju075/php-framework#uml">UML</a> | <a href="https://github.com/Juju075/php-framework#mvc-architecture">MVC Architecture</a> | <a href="https://github.com/Juju075/php-framework#autoloading-standard-psr-4">Autoloading</a> | <a href="https://github.com/Juju075/php-framework#container-interface-psr-11">Container Interface</a> | <a href="https://github.com/Juju075/php-framework#event-dispatcher-psr-14">Event Dispatcher</a> | <a href="https://github.com/Juju075/php-framework#router">Router</a> | <a href="https://github.com/Juju075/php-framework#object-relation-model-wo-reflexion">ORM</a>
 | <a href="https://github.com/Juju075/php-framework#formbuilder">FormBuilder</a> |<br>
-| <a href="https://github.com/Juju075/php-framework#querybuilder">QueryBuilder</a> | <a href="https://github.com/Juju075/php_framework#hydratation">Hydratation</a> | <a href="https://github.com/Juju075/php_framework#template-engine">Template Engine</a> | <a href="https://github.com/Juju075/php_framework#repository">Repository</a> | <a href="https://github.com/Juju075/php_framework#exceptions">Exceptions</a> | <a href="https://github.com/Juju075/php_framework#dotenv">DotEnv</a>
-| <a href="https://github.com/Juju075/php-framework#csrf-token">Csrf Token</a> | <a href="https://github.com/Juju075/php_framework#pagination">Pagination </a>|<br> | <a href="https://github.com/Juju075/php_framework#authentication">Authentification</a> | <a href="https://github.com/Juju075/php_framework#session-interface">Session Interface</a> | ...
+| <a href="https://github.com/Juju075/php-framework#querybuilder">QueryBuilder</a> | <a href="https://github.com/Juju075/php-framework#hydratation">Hydratation</a> | <a href="https://github.com/Juju075/php-framework#template-engine">Template Engine</a> | <a href="https://github.com/Juju075/php-framework#repository">Repository</a> | <a href="https://github.com/Juju075/php-framework#exceptions">Exceptions</a> | <a href="https://github.com/Juju075/php-framework#dotenv">DotEnv</a>
+| <a href="https://github.com/Juju075/php-framework#csrf-token">Csrf Token</a> | <a href="https://github.com/Juju075/php-framework#pagination">Pagination </a>|<br> | <a href="https://github.com/Juju075/php-framework#authentication">Authentification</a> | <a href="https://github.com/Juju075/php-framework#session-interface">Session Interface</a> | ...
 
 <a href="https://github.com/Juju075/php-framework#other-projects">Other projects:</a>
 <br/>
 
 ## UML
 
-### <a href="https://github.com/Juju075/php_framework/tree/main/UML">`📄 See diagrams`</a>
+### <a href="https://github.com/Juju075/php-framework/tree/main/UML">`📄 See diagrams`</a>
 
 <div align="center"><img src="/UML/diagClass.JPG"></div>
 
@@ -198,7 +198,7 @@ Generate output page on the fly
 ```
 
 <br/>
-<a href="https://github.com/Juju075/php_framework#topics">Top of page</a>
+<a href="https://github.com/Juju075/php-framework#topics">Top of page</a>
 
 ## Repository
 
@@ -314,7 +314,7 @@ Lets you connect with your credentials
 
 [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
 
-<a href="https://github.com/Juju075/php_framework#topics">Top of page</a>
+<a href="https://github.com/Juju075/php-framework#topics">Top of page</a>
 
 # Other projects:
 
