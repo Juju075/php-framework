@@ -1,3 +1,7 @@
+<div align="center"><a href="https://www.linkedin.com/in/bempime-kheve/"><img src="public/images/linkedinbadge.png"></a></div>
+
+#
+<br><br>
 <div align="center"><img src="https://firebasestorage.googleapis.com/v0/b/swimmio-content/o/repositories%2FZ2l0aHViJTNBJTNBcGhwX2ZyYW1ld29yayUzQSUzQUp1anUwNzU%3D%2F1d8d56ca-3d83-4798-bd77-3871b8113210.png?alt=media&token=645b3dc1-6118-4d7d-900d-a1774403db19" style="width:'25%'"/></div>
 
 <br/>
